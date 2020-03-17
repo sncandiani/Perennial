@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {BrowserRouter as Router} from "react-router-dom"
+import './index.css'
+import Perennial from "./Perennial"
+import * as firebase from "firebase"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const firebaseConfig = {
+    apiKey: "AIzaSyBSi4awqUCgaLk-bptuuedwulnsd0bYfbc",
+    authDomain: "perennial-5f4d8.firebaseapp.com",
+    databaseURL: "https://perennial-5f4d8.firebaseio.com",
+    projectId: "perennial-5f4d8",
+    storageBucket: "perennial-5f4d8.appspot.com",
+    messagingSenderId: "624070405563",
+    appId: "1:624070405563:web:cc6430948b58199988a89e"
+  };
+firebase.initializeApp(firebaseConfig);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+    <Router>
+        <Perennial />
+    </Router>, 
+    document.getElementById('root')
+    
+)
