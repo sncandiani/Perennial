@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react"
 import { Route, Redirect } from "react-router-dom";
 import Home from "../src/components/home/Home"
-import Login from "../src/Login"
+import Login from "../src/components/auth/Login"
 import firebase from 'firebase/app'
 import fire from "../src/config/fire"
 
