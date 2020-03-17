@@ -1,13 +1,9 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import AppViews from "../src/AppViews"
-const Perennial = () => {
-  const authListener = () => {
-      fire.auth().onAuthStateChanged((user) => {
-          if(user) {
-              this.setState({user})
-          }
-      })
-  }  
+import fire from "../src/config/fire"
+import Login from "../src/Login"
+
+const Perennial = (props) => {
     return (
         <>
         <AppViews />
