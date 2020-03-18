@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "uid": "41zh63p6brc9L6LY8MmkwuNATxO2",
+      "name": "Sofia Candiani",
+      "id": 1
+    },
+    {
+      "uid": "uSEJjbs43pSRcCfjKFS9dLjyMCr1",
+      "name": "andy",
+      "id": 2
+    },
+    {
+      "uid": "0ov9RyB6nqRr9S9Lk913l1j7tOg2",
+      "name": "trinity",
+      "id": 3
+    }
+  ],
+  "plants": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Bigleaf Hydrangea, French Hydrangea, Mophead 'Endless Summer'",
+      "height": "36-48 in",
+      "sunExposure": "Sun to Partial Shade",
+      "waterRequirements": "Requires consistently moist soil; do not let dry out between waterings",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2003/10/16/tyke/3cc07e.jpg&widht=700&height=312"
+    }
+  ],
+  "gardens": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "My first Hydrangea garden",
+      "dateCreated": "2020 04 03",
+      "gardenLocation": "Back of house",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
+    }
+  ],
+  "gardensAndPlants": [
+    {
+      "id": 1,
+      "gardenId": 1,
+      "plantId": 1
+    }
+  ]
+}
