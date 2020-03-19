@@ -9,6 +9,16 @@
       "uid": "DvmPRNuVDwY39YqfVDciJXJiUzP2",
       "name": "trinity",
       "id": 2
+    },
+    {
+      "uid": "wDRBjMoPVociRfWpDyC6z65VZa73",
+      "name": "Michael Clark",
+      "id": 3
+    },
+    {
+      "uid": "7NC7NsMEm4WyR6mvFciXV4DVJ702",
+      "name": "andrew green",
+      "id": 4
     }
   ],
   "plants": [
@@ -26,34 +36,66 @@
     {
       "id": 1,
       "userId": 1,
-      "name": "Sofias Hydrangea garden",
-      "dateCreated": "2020 04 03",
+      "name": "Sofias 1st Hydrangea garden",
+      "dateCreated": "2020-01-01",
       "gardenLocation": "Back of house",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
     },
     {
       "id": 2,
       "userId": 2,
-      "name": "Trinitys first Hydrangea garden",
-      "dateCreated": "2020 04 03",
+      "name": "Trinitys 1st Hydrangea garden",
+      "dateCreated": "2021-05-06",
       "gardenLocation": "Back of house",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
     },
     {
       "id": 3,
       "userId": 1,
-      "name": "Sofias second Hydrangea garden",
-      "dateCreated": "2020 04 03",
+      "name": "Sofias 2nd Hydrangea garden",
+      "dateCreated": "2020-03-04",
       "gardenLocation": "Back of house",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
     },
     {
+      "id": 4,
       "userId": 1,
-      "name": "Sofias first rose garden",
+      "name": "Sofias 1st  rose garden",
       "dateCreated": "2020-03-18",
       "gardenLocation": "backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1",
-      "id": 4
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1"
+    },
+    {
+      "userId": 2,
+      "name": "Trinity 2nd hydrangea garden",
+      "dateCreated": "2021-02-14",
+      "gardenLocation": "front porch",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fheritagemuseumsandgardens.org%2Fwp-content%2Fuploads%2F2018%2F02%2FHERIT.HYDRANGEAS-103-1024x768.jpg&f=1&nofb=1",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "name": "michaels 1st garden",
+      "dateCreated": "2021-02-02",
+      "gardenLocation": "backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxgMl24bX_iY%2Fmaxresdefault.jpg&f=1&nofb=1"
+    },
+    {
+      "userId": 3,
+      "name": "michaels 2nd garden",
+      "dateCreated": "2021-02-02",
+      "gardenLocation": "some location",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxgMl24bX_iY%2Fmaxresdefault.jpg&f=1&nofb=1",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "userId": 4,
+      "name": "Good garden name",
+      "dateCreated": "0002-02-02",
+      "gardenLocation": "sdklfjf;lj",
+      "imageUrl": "sldjsflkj"
     }
   ],
   "gardensAndPlants": [
