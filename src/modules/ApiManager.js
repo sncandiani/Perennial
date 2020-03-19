@@ -35,6 +35,18 @@ const API = {
         return fetch(baseUrl + "gardens/" + id, {
             method: "DELETE"
         });
+    }, 
+    updateGarden(garden) {
+        return fetch(baseUrl + "gardens/" + garden.id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(garden)
+        })
+    }, 
+    editGarden(gardenId) {
+        return fetch(baseUrl + "gardens/" + gardenId ).then(resp => resp.json())
     }
 }
 

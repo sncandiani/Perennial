@@ -46,16 +46,15 @@ const AppViews = (props) => {
                     exact
                     path="/addgarden"
                     render={props => 
-                    <GardenForm {...props}/>
+                    user ? <GardenForm {...props}/> : <Login />
                     }
                 />
                 <Route
-                    exact
-                    path="/addgarden"
-                    render={props => 
-                    <GardenForm {...props}/>
-                    }
-                />
+                path="/gardens/:gardenId(\d+)/edit"
+                render={props => 
+                user ? <GardenEditForm {...props}/> : <Login />
+                }
+            />
     </React.Fragment>
     )
 }
