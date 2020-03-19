@@ -1,19 +1,14 @@
 {
   "users": [
     {
-      "uid": "41zh63p6brc9L6LY8MmkwuNATxO2",
+      "uid": "KuucP3x7NIcSMzzK6Uh7nqkUP0b2",
       "name": "Sofia Candiani",
       "id": 1
     },
     {
-      "uid": "uSEJjbs43pSRcCfjKFS9dLjyMCr1",
-      "name": "andy",
-      "id": 2
-    },
-    {
-      "uid": "0ov9RyB6nqRr9S9Lk913l1j7tOg2",
+      "uid": "DvmPRNuVDwY39YqfVDciJXJiUzP2",
       "name": "trinity",
-      "id": 3
+      "id": 2
     }
   ],
   "plants": [
@@ -31,10 +26,34 @@
     {
       "id": 1,
       "userId": 1,
-      "name": "My first Hydrangea garden",
+      "name": "Sofias Hydrangea garden",
       "dateCreated": "2020 04 03",
       "gardenLocation": "Back of house",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Trinitys first Hydrangea garden",
+      "dateCreated": "2020 04 03",
+      "gardenLocation": "Back of house",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "name": "Sofias second Hydrangea garden",
+      "dateCreated": "2020 04 03",
+      "gardenLocation": "Back of house",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
+    },
+    {
+      "userId": 1,
+      "name": "Sofias first rose garden",
+      "dateCreated": "2020-03-18",
+      "gardenLocation": "backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1",
+      "id": 4
     }
   ],
   "gardensAndPlants": [
