@@ -7,7 +7,6 @@ const Home = (props) => {
     const clearUser = () => {
         sessionStorage.clear()
     }
-    console.log(props.firebaseUser)
     return ( 
         <>
             <h1>Hi! Welcome home {props.firebaseUser.displayName}!</h1>

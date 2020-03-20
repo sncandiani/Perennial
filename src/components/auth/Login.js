@@ -29,10 +29,8 @@ const Login = () => {
       };
       ui.start('#firebaseui-auth-container', uiConfig);
     }, []);
-
-    useEffect(() => {
-      return (() => {ui.delete()})
-    })
+    
+    
     return (
         <>
         <div id="firebaseui-auth-container"></div>
