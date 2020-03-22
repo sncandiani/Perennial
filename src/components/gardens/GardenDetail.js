@@ -32,16 +32,13 @@ const GardenDetail = (props) => {
     getAssociatedPlants()
     }, []);
 
-
-console.log(plants)
-
     return(
     <>
         
         <h3>{garden.name}</h3>
         <h3>{garden.dateCreated}</h3>
         <h3>{garden.gardenLocation}</h3>
-        <button type="button">Add plant</button>
+        <button className="searchPlantButton" type="button" onClick={() => props.history.push(`/searchplants`)}>Search Plants</button>
         {plants.length === 0 ? <h1>You have no plants</h1> : plants.map(plant => <PlantCard key={plant.id} name={plant.name}/> )}
         
     </>

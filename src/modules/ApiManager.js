@@ -53,6 +53,27 @@ const API = {
     }, 
     findAssociatedPlants() {
         return fetch(baseUrl + "gardensAndPlants/?_expand=plant").then(resp => resp.json())
+    }, 
+    getAllPlants() {
+        return fetch(baseUrl + "plants").then(resp => resp.json())
+    }, 
+    postPlant(plant) {
+        return fetch(baseUrl + "plants", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify(plant)
+        })
+    }, 
+    postPlantToGarden(gardenId, plant) {
+        return fetch(baseUrl + "gardens/" + gardenId + "?_embed=gardensAndPlants", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify(plant)
+        })
     }
 }
 

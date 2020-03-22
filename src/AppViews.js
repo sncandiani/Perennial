@@ -5,6 +5,8 @@ import Login from "../src/components/auth/Login"
 import GardenForm from "../src/components/gardens/GardenForm"
 import GardenEditForm from "../src/components/gardens/GardenEditForm"
 import GardenDetail from "../src/components/gardens/GardenDetail"
+import PlantList from "../src/components/plants/PlantList"
+import PlantContributeForm from "../src/components/plants/PlantContributeForm"
 import firebase from 'firebase/app'
 import API from "../src/modules/ApiManager"
 
@@ -72,6 +74,18 @@ const AppViews = (props) => {
                 path="/gardens/:gardenId(\d+)/edit"
                 render={props => 
                 firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <Login />
+                }
+            />
+            <Route
+                path="/searchplants"
+                render={props => 
+                firebaseUser && apiUser != null ? <PlantList apiUser={apiUser} {...props}/> : <Login />
+                }
+            />
+            <Route
+                path="/contributeplant"
+                render={props => 
+                firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <Login />
                 }
             />
     </React.Fragment>
