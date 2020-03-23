@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import API from "../../modules/ApiManager"
 const GardenForm = (props) => {
-    const [gardens, setGardens] = useState({userId: parseInt(sessionStorage.getItem("user")), name: "", dateCreated: "", gardenLocation: "", imageUrl: ""})
+    const [gardens, setGardens] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", dateCreated: "", gardenLocation: "", imageUrl: ""})
     const [isLoading, setIsLoading] = useState(false)
     //value of gardens will be taken in with every change
     const handleFieldChange = (e) => {

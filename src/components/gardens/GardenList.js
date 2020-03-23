@@ -3,7 +3,7 @@ import API from "../../modules/ApiManager"
 import GardenCard from "../gardens/GardenCard"
 
 const GardenList = (props) => {
-    const [gardens, setGardens] = useState([]);
+    const [gardens, setGardens] = useState([])
     //gets gardens from database and sets those gardens to gardens that can be accessed in the list
       const getGardens = () => {
         API.getUserGardens(props.apiUser).then(info =>{ 
@@ -24,7 +24,7 @@ const GardenList = (props) => {
 
     return (
         <div className="container-card">
-            {gardens.length === 0 ? <h1>You have no gardens</h1>  : gardens.map(garden => <GardenCard key={garden.id} garden={garden} deleteGardens={deleteGardens} {...props}/>)} 
+           {gardens.length === 0 ? <h1>You have no gardens</h1>  : gardens.map(garden => <GardenCard key={garden.id} garden={garden} deleteGardens={deleteGardens} {...props}/>)} 
         </div>
 
     )
