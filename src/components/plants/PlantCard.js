@@ -19,13 +19,14 @@ const PlantCard = (props) => {
     })
     }
 
-   
-    
+
     
 return ( 
+   
     <>
     
     <h1>{props.name}</h1>
+    <img src={props.imageUrl}></img>
     <button type="button" onClick={deletePlantToGarden}>Delete</button>
     </>
 )

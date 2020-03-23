@@ -23,8 +23,6 @@ const GardenDetail = (props) => {
             setPlants(plantArr)
         }) 
     }
-
-
     useEffect(() => {
         getGardens();
         getAssociatedPlants();
@@ -37,7 +35,7 @@ const GardenDetail = (props) => {
         <h3>{garden.dateCreated}</h3>
         <h3>{garden.gardenLocation}</h3>
         <button className="searchPlantButton" type="button" onClick={() => props.history.push(`/searchplants`)}>Search Plants</button>
-        {plants.length === 0 ? <h1>You have no plants</h1> : plants.map(plant => <PlantCard key={plant.id} name={plant.plant.name} plantId={plant.plant.id} gardenId={props.gardenId} getAssociatedPlants={getAssociatedPlants} {...props}/> )}
+        {plants.length === 0 ? <h1>You have no plants</h1> : plants.map(plant => <PlantCard key={plant.id} name={plant.name} imageUrl={plant.imageUrl} plantId={plant.id} gardenId={props.gardenId} getAssociatedPlants={getAssociatedPlants} {...props}/> )}
         
     </>
     )
