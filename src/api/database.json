@@ -14,6 +14,11 @@
       "uid": "zrDAwkTyybSwEY6nwr6ZOdOLDwx2",
       "name": "Michael Clark",
       "id": 3
+    },
+    {
+      "uid": "hd3CaN4ASMP62tCUqrPBZkXLEjd2",
+      "name": "New User",
+      "id": 4
     }
   ],
   "plants": [
@@ -45,13 +50,13 @@
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/10/15/bmuller/497911.jpg&widht=700&height=312"
     },
     {
-      "userId": 1,
-      "name": "some plant",
+      "id": 6,
+      "userId": 4,
+      "name": "rose",
       "height": "6 in",
       "sunExposure": "lots of sun",
-      "waterRequirements": "much water",
-      "imageUrl": "someimageurl",
-      "id": 5
+      "waterRequirements": "lots of water",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4.bp.blogspot.com%2F-Etvkc-qfYyU%2FTgdYDLE24zI%2FAAAAAAAAB0A%2FC3mAeCDAK3o%2Fs1600%2FSmall_Red_Rose.jpg&f=1&nofb=1"
     }
   ],
   "gardens": [
@@ -89,23 +94,35 @@
     },
     {
       "userId": 3,
-      "name": "michaels first garden",
-      "dateCreated": "2020-03-23",
-      "gardenLocation": "backyard",
+      "name": "Michaels first garden",
+      "dateCreated": "2020-03-03",
+      "gardenLocation": "Backyard",
       "imageUrl": "someurl",
       "id": 6
+    },
+    {
+      "userId": 4,
+      "name": "some rose garden",
+      "dateCreated": "2020-03-20",
+      "gardenLocation": "backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1",
+      "id": 7
     }
   ],
   "gardensAndPlants": [
     {
       "gardenId": 2,
       "plantId": 3,
-      "id": 1
+      "id": 1,
+      "nickname": "",
+      "hasBeenWatered": false
     },
     {
       "gardenId": 3,
       "plantId": 3,
-      "id": 2
+      "id": 2,
+      "nickname": "",
+      "hasBeenWatered": false
     },
     {
       "gardenId": 6,
@@ -113,8 +130,8 @@
       "id": 3
     },
     {
-      "gardenId": 6,
-      "plantId": 2,
+      "gardenId": 1,
+      "plantId": 1,
       "id": 4
     }
   ]

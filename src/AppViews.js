@@ -10,6 +10,8 @@ import PlantContributeForm from "../src/components/plants/PlantContributeForm"
 import PlantEditForm from "../src/components/plants/PlantEditForm"
 import firebase from 'firebase/app'
 import API from "../src/modules/ApiManager"
+import NavBar from "../src/components/nav/NavBar"
+
 
 
 const AppViews = (props) => {
@@ -49,8 +51,11 @@ const AppViews = (props) => {
     
 
         return (
+            <>
+            {firebaseUser && apiUser != null ? <NavBar /> : null}
+            
             <React.Fragment>
-                
+              
                 <Route
                     exact
                     path="/"
@@ -96,6 +101,7 @@ const AppViews = (props) => {
                 }
             />
     </React.Fragment>
+    </>
     )
 }
 
