@@ -16,7 +16,7 @@ const PlantSearch = (props) => {
            }    
          }}>Delete your listing</button> 
          </>
-         : console.log("nope")}
+         : null}
         </>
     )
 

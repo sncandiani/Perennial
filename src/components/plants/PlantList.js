@@ -6,18 +6,27 @@ const PlantList = (props) => {
 const [searchPlants, setSearchPlants] = useState([])
 const [selectGardens, setSelectGardens] = useState([])
 const [option, setOption] = useState({value: ""})
-const setPlants = () => {
-    API.getAllPlants().then(plants => setSearchPlants(plants))
+const [text, setText]= useState("")
+
+
+const setPlants = (textValue) => {
+    API.getAllPlants().then(plants => {
+        const filteredPlants = plants.filter(plant => {
+             return plant.name.toLowerCase().includes(textValue.toLowerCase()) === true
+         }) 
+         setSearchPlants(filteredPlants)
+    })
    }
+
 useEffect(() => {
-    setPlants();
+    setPlants("ldfgkjhdglfkjh");
     API.getUserGardens(props.apiUser).then(info =>{ 
         setSelectGardens(info.gardens)
          const stateToChange = { ...option};
         stateToChange["value"] = info.gardens[0].id;
         setOption(stateToChange);  
     })
-   
+
 }, [])
 const handleChange = (e) => {
     const stateToChange = {...option}
@@ -32,6 +41,13 @@ const createRelationshipObj = (plantId) => {
     }
     API.postPlantToGarden(plantAndGardenObj)
 }
+const handleTextFieldChange = (e) => {
+const stateToChange = {...text}
+stateToChange[e.target.id] = e.target.value
+setText(stateToChange)
+setPlants(e.target.value)
+}
+
 
 return ( 
     <>
@@ -45,6 +61,7 @@ return (
             })}
         </select>
     </p>
+    Search:<input id="searchBar" type="text" onChange={handleTextFieldChange}></input>
     {searchPlants.map(plant => <PlantSearch key={plant.id} name={plant.name} plantId={plant.id}  apiUser={props.apiUser} userId={plant.userId} selectGardens={selectGardens} createRelationshipObj={createRelationshipObj} setPlants={setPlants} {...props}/>) }
     </>
 )

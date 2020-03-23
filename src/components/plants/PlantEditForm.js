@@ -4,6 +4,7 @@ import API from "../../modules/ApiManager"
 const PlantEditForm = (props) => {
     const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposure: "", waterRequirements: "", imageUrl: ""})
     const [isLoading, setIsLoading] = useState(false)
+    
     //value of plants will be taken in with every change
     const handleFieldChange = (e) => {
         const stateToChange = {...plants} 
@@ -24,7 +25,7 @@ const PlantEditForm = (props) => {
         }
         API.updatePlant(editedPlant)
         .then(() => {
-            props.history.push("/")
+            props.history.push("/searchplants")
         })
     }
 
