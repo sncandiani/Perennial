@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import API from "../../modules/ApiManager"
-import PlantEditForm from "../../components/plants/PlantEditForm"
+
 const PlantCard = (props) => {
     const deletePlantToGarden = () => {
         API.getPlantToGardenObjs()

@@ -94,6 +94,11 @@ const API = {
             },
             body: JSON.stringify(plant)
         })
+    }, 
+    deletePlant(id) {
+        return fetch(baseUrl + "plants/" + id, {
+            method: "DELETE"
+        });
     }
 }
 
