@@ -66,12 +66,32 @@ const API = {
             body: JSON.stringify(plant)
         })
     }, 
-    postPlantToGarden(gardenId, plant) {
-        return fetch(baseUrl + "gardens/" + gardenId + "?_embed=gardensAndPlants", {
+    postPlantToGarden(gardenAndPlantId) {
+        return fetch(baseUrl + "gardensAndPlants", {
             method: "POST", 
             headers: {
                 "Content-Type": "application/json"
             }, 
+            body: JSON.stringify(gardenAndPlantId)
+        })
+    }, 
+    deletePlantToGarden(gardenAndPlantId) {
+        return fetch(baseUrl + "gardensAndPlants/" + gardenAndPlantId, {
+            method: "DELETE"
+        });
+    }, 
+    getPlantToGardenObjs() {
+        return fetch(baseUrl + "gardensAndPlants").then(resp => resp.json())
+    }, 
+    editPlant(plantId) {
+        return fetch(baseUrl + "plants/" + plantId ).then(resp => resp.json())
+    }, 
+    updatePlant(plant) {
+        return fetch(baseUrl + "plants/" + plant.id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
             body: JSON.stringify(plant)
         })
     }

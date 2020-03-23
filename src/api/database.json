@@ -47,7 +47,7 @@
     },
     {
       "id": 3,
-      "userId": 1,
+      "userId": 2,
       "name": "Salvia Species, Elegant Sage, Pineapple Sage",
       "height": "36-48 in. (90-120 cm)",
       "sunExposure": "Full Sun",
@@ -141,14 +141,9 @@
   ],
   "gardensAndPlants": [
     {
-      "id": 1,
-      "gardenId": 1,
-      "plantId": 1
-    },
-    {
-      "id": 2,
-      "gardenId": 1,
-      "plantId": 2
+      "gardenId": 2,
+      "plantId": 3,
+      "id": 1
     }
   ]
 }

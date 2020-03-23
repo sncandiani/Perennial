@@ -7,6 +7,7 @@ import GardenEditForm from "../src/components/gardens/GardenEditForm"
 import GardenDetail from "../src/components/gardens/GardenDetail"
 import PlantList from "../src/components/plants/PlantList"
 import PlantContributeForm from "../src/components/plants/PlantContributeForm"
+import PlantEditForm from "../src/components/plants/PlantEditForm"
 import firebase from 'firebase/app'
 import API from "../src/modules/ApiManager"
 
@@ -65,15 +66,21 @@ const AppViews = (props) => {
                     }
                 />
                 <Route
-                path="/gardens/:gardenId(\d+)/"
+                exact path="/gardens/:gardenId(\d+)/"
                 render={props => 
                 firebaseUser && apiUser != null ? <GardenDetail gardenId={parseInt(props.match.params.gardenId)} apiUser={apiUser} {...props}/> : <Login />
                 }
             />
                 <Route
-                path="/gardens/:gardenId(\d+)/edit"
+                exact path="/gardens/:gardenId(\d+)/edit"
                 render={props => 
                 firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <Login />
+                }
+            />
+            <Route
+                 exact path="/plants/:plantId(\d+)/edit"
+                render={props => 
+                firebaseUser && apiUser != null ? <PlantEditForm apiUser={apiUser} {...props}/> : <Login />
                 }
             />
             <Route
