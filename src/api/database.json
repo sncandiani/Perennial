@@ -11,19 +11,9 @@
       "id": 2
     },
     {
-      "uid": "5q46lV7H4KNwTEVPGd39PTlisYD3",
+      "uid": "zrDAwkTyybSwEY6nwr6ZOdOLDwx2",
       "name": "Michael Clark",
       "id": 3
-    },
-    {
-      "uid": "RwrQYbpRtdTeaRJVO7IOHgCqYM72",
-      "name": "andrew green",
-      "id": 4
-    },
-    {
-      "uid": "Op8N889PFqh0XaEllCyi5fAcciA3",
-      "name": "andy",
-      "id": 5
     }
   ],
   "plants": [
@@ -90,14 +80,6 @@
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-PdMhtuuttoI%2FTi7rjZDoeyI%2FAAAAAAAAAng%2F4fKcPnO44jM%2Fs1600%2FShamrock%2BHydrangea%2Bview%2B2.JPG&f=1&nofb=1"
     },
     {
-      "id": 4,
-      "userId": 1,
-      "name": "Sofias 1st  rose garden",
-      "dateCreated": "2020-03-18",
-      "gardenLocation": "backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1"
-    },
-    {
       "userId": 2,
       "name": "Trinity 2nd hydrangea garden",
       "dateCreated": "2021-02-14",
@@ -106,28 +88,12 @@
       "id": 5
     },
     {
-      "id": 6,
       "userId": 3,
-      "name": "michaels 1st garden",
-      "dateCreated": "2021-02-02",
+      "name": "michaels first garden",
+      "dateCreated": "2020-03-23",
       "gardenLocation": "backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxgMl24bX_iY%2Fmaxresdefault.jpg&f=1&nofb=1"
-    },
-    {
-      "userId": 3,
-      "name": "michaels 2nd garden",
-      "dateCreated": "2021-02-02",
-      "gardenLocation": "some location",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FxgMl24bX_iY%2Fmaxresdefault.jpg&f=1&nofb=1",
-      "id": 7
-    },
-    {
-      "id": 8,
-      "userId": 4,
-      "name": "Good garden name",
-      "dateCreated": "0002-02-02",
-      "gardenLocation": "sdklfjf;lj",
-      "imageUrl": "sldjsflkj"
+      "imageUrl": "someurl",
+      "id": 6
     }
   ],
   "gardensAndPlants": [
@@ -135,6 +101,21 @@
       "gardenId": 2,
       "plantId": 3,
       "id": 1
+    },
+    {
+      "gardenId": 3,
+      "plantId": 3,
+      "id": 2
+    },
+    {
+      "gardenId": 6,
+      "plantId": 1,
+      "id": 3
+    },
+    {
+      "gardenId": 6,
+      "plantId": 2,
+      "id": 4
     }
   ]
 }
