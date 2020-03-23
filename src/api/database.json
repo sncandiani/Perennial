@@ -1,24 +1,29 @@
 {
   "users": [
     {
-      "uid": "KuucP3x7NIcSMzzK6Uh7nqkUP0b2",
+      "uid": "pSe2Vwf4PLPdz66bSEqkk4wgU3o2",
       "name": "Sofia Candiani",
       "id": 1
     },
     {
-      "uid": "DvmPRNuVDwY39YqfVDciJXJiUzP2",
+      "uid": "Nhegs5g9hld11MjJA1RfrtWeCLB3",
       "name": "trinity",
       "id": 2
     },
     {
-      "uid": "wDRBjMoPVociRfWpDyC6z65VZa73",
+      "uid": "5q46lV7H4KNwTEVPGd39PTlisYD3",
       "name": "Michael Clark",
       "id": 3
     },
     {
-      "uid": "7NC7NsMEm4WyR6mvFciXV4DVJ702",
+      "uid": "RwrQYbpRtdTeaRJVO7IOHgCqYM72",
       "name": "andrew green",
       "id": 4
+    },
+    {
+      "uid": "Op8N889PFqh0XaEllCyi5fAcciA3",
+      "name": "andy",
+      "id": 5
     }
   ],
   "plants": [
@@ -30,6 +35,33 @@
       "sunExposure": "Sun to Partial Shade",
       "waterRequirements": "Requires consistently moist soil; do not let dry out between waterings",
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2003/10/16/tyke/3cc07e.jpg&widht=700&height=312"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Daylily 'Stella De Oro'",
+      "height": "6-12 in. (15-30 cm)",
+      "sunExposure": "Full Sun, Sun to Partial Shade",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/07/14/Crimson/8d9d83.jpg&widht=700&height=312"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "Salvia Species, Elegant Sage, Pineapple Sage",
+      "height": "36-48 in. (90-120 cm)",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/10/15/bmuller/497911.jpg&widht=700&height=312"
+    },
+    {
+      "userId": 1,
+      "name": "some plant",
+      "height": "6 in",
+      "sunExposure": "lots of sun",
+      "waterRequirements": "much water",
+      "imageUrl": "someimageurl",
+      "id": 5
     }
   ],
   "gardens": [
@@ -100,9 +132,9 @@
   ],
   "gardensAndPlants": [
     {
-      "id": 1,
-      "gardenId": 1,
-      "plantId": 1
+      "gardenId": 2,
+      "plantId": 3,
+      "id": 1
     }
   ]
 }
