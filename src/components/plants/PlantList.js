@@ -55,7 +55,7 @@ const createRelationshipObj = (plantObj) => {
             personalPlantId: plantInfo.id
         }
         API.postPersonalPlantToGarden(personalPlantGardenObj)
-        window.alert(`Congratulations! You have added ${newPlantObj.name} to ${option.name}`)
+        window.alert(`Congratulations! You have added ${newPlantObj.name}`)
     })
     
    
