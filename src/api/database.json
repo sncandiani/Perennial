@@ -22,24 +22,16 @@
       "id": 1
     },
     {
+      "id": 2,
       "userId": 2,
-      "name": "Oakleaf Hydrangea, Oak-leaf Hydrangea",
+      "name": "Noakleaf",
       "height": "6-8 ft.",
       "sunExposure": "Sun to Partial Shade",
       "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312",
-      "id": 2
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312"
     }
   ],
   "gardens": [
-    {
-      "userId": 1,
-      "name": "Sofias 1st Garden",
-      "dateCreated": "2020-03-24",
-      "gardenLocation": "Backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.gardeningknowhow.com%2Fwp-content%2Fuploads%2F2007%2F03%2Fveggie-garden.jpg&f=1&nofb=1",
-      "id": 1
-    },
     {
       "userId": 2,
       "name": "Trinitys first garden out of spite",
@@ -47,18 +39,31 @@
       "gardenLocation": "Backyard",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-11W-OXoUE9w%2FT_bXYrKxLuI%2FAAAAAAAABBk%2FDuFgHd3NALI%2Fs1600%2Fws_strafford_hydrangea_1600x1200.jpg&f=1&nofb=1",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "sofias first garden",
+      "dateCreated": "2020-03-03",
+      "gardenLocation": "slfj",
+      "imageUrl": "sdlkfj",
+      "id": 3
     }
   ],
   "gardensAndPlants": [
     {
-      "gardenId": 1,
-      "personalPlantId": 1,
-      "id": 1
-    },
-    {
       "gardenId": 2,
       "personalPlantId": 3,
       "id": 2
+    },
+    {
+      "gardenId": 3,
+      "personalPlantId": 4,
+      "id": 3
+    },
+    {
+      "gardenId": 3,
+      "personalPlantId": 5,
+      "id": 4
     }
   ],
   "personalPlants": [
@@ -94,6 +99,28 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "Daylily 'Kwanso'",
+      "height": "4-6 ft",
+      "sunExposure": "Full Sun, Sun to Partial Shade",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "Oakleaf Hydrangea, Oak-leaf Hydrangea",
+      "height": "6-8 ft.",
+      "sunExposure": "Sun to Partial Shade",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 5
     }
   ]
 }
