@@ -4,9 +4,7 @@ import firebase from 'firebase/app'
 import { Link } from "react-router-dom"
 import { withRouter } from "react-router-dom"
 const NavBar = (props) => {
-    const clearUser = () => {
-        sessionStorage.clear()
-    }
+    
     return(
         <nav>
                 <ul className="navList">
@@ -21,7 +19,7 @@ const NavBar = (props) => {
             </Link>
                     </li>
                     <li>
-                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#160D58' }} to="/" onClick={() => {firebase.auth().signOut() && clearUser()}}>
+                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#160D58' }} to="/" onClick={() => {firebase.auth().signOut()}}>
                         Logout
             </Link>
                     </li>

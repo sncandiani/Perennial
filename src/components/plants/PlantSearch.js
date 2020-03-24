@@ -7,9 +7,12 @@ const PlantSearch = (props) => {
         <>
         <h1>{props.name}</h1>
         <button className="addPlantButton" type="button" onClick={() => {
-          
-          props.createRelationshipObj(props.plantObj)}
-        
+          if(props.selectGardens[0].name === "No Gardens Available") {
+            window.alert("You must create a garden to add a plant")
+          } else {
+            props.createRelationshipObj(props.plantObj)
+          }
+          }
           }>Add Plant</button>
         {props.userId === props.apiUser ?
         <>

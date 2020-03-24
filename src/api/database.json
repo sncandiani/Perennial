@@ -42,9 +42,9 @@
     },
     {
       "userId": 2,
-      "name": "Trinitys 1st Garden",
-      "dateCreated": "2002-05-05",
-      "gardenLocation": "Front Porch",
+      "name": "Trinitys first garden out of spite",
+      "dateCreated": "2020-03-03",
+      "gardenLocation": "Backyard",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-11W-OXoUE9w%2FT_bXYrKxLuI%2FAAAAAAAABBk%2FDuFgHd3NALI%2Fs1600%2Fws_strafford_hydrangea_1600x1200.jpg&f=1&nofb=1",
       "id": 2
     }
@@ -57,7 +57,7 @@
     },
     {
       "gardenId": 2,
-      "personalPlantId": 2,
+      "personalPlantId": 3,
       "id": 2
     }
   ],
@@ -83,6 +83,17 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 2
+    },
+    {
+      "userId": 2,
+      "name": "Daylily 'Kwanso'",
+      "height": "4-6 ft",
+      "sunExposure": "Full Sun, Sun to Partial Shade",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 3
     }
   ]
 }

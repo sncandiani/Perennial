@@ -4,7 +4,7 @@ import PlantSearch from "../../components/plants/PlantSearch"
 
 const PlantList = (props) => {
 const [searchPlants, setSearchPlants] = useState([])
-const [selectGardens, setSelectGardens] = useState([])
+const [selectGardens, setSelectGardens] = useState([{id: 1, name: "No Gardens Available"}])
 const [option, setOption] = useState({value: ""})
 const [text, setText]= useState("")
 
@@ -21,10 +21,16 @@ const setPlants = (textValue) => {
 useEffect(() => {
     setPlants("ldfgkjhdglfkjh");
     API.getUserGardens(props.apiUser).then(info =>{ 
-        setSelectGardens(info.gardens)
+        if(info.gardens.length === 0) {
+            const stateToChange = { ...option};
+        stateToChange["value"] = selectGardens[0].id;
+        setOption(stateToChange); 
+        } else {
+            setSelectGardens(info.gardens)
          const stateToChange = { ...option};
         stateToChange["value"] = info.gardens[0].id;
-        setOption(stateToChange);  
+        setOption(stateToChange); 
+        }
     })
 
 }, [])
@@ -78,9 +84,15 @@ return (
     <p>
         <label>Select Garden</label>
         <select id = "myGardenList" onChange={handleChange}>
-            {selectGardens.map(garden => {
-                  return <option key={garden.id} value={garden.id}>{garden.name}</option>  
-            })}
+            {
+                selectGardens[0].name === "No Gardens Available" ? 
+                selectGardens.map(garden => {
+                return <option value={garden.id}>{garden.name}</option>
+                }) :
+                selectGardens.map(garden => {
+                return <option key={garden.id} value={garden.id}>{garden.name}</option> 
+                })
+            }
         </select>
     </p>
     Search:<input id="searchBar" type="text" onChange={handleTextFieldChange}></input>
@@ -88,5 +100,6 @@ return (
     </>
 )
 }
+
 
 export default PlantList
