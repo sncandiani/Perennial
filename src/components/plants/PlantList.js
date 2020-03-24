@@ -12,7 +12,7 @@ const [text, setText]= useState("")
 const setPlants = (textValue) => {
     API.getAllPlants().then(plants => {
         const filteredPlants = plants.filter(plant => {
-             return plant.name.toLowerCase().includes(textValue.toLowerCase()) === true
+             return plant.name.toLowerCase().includes(textValue) === true
          }) 
          setSearchPlants(filteredPlants)
     })
@@ -34,12 +34,33 @@ const handleChange = (e) => {
     setOption(stateToChange) 
 }
 
-const createRelationshipObj = (plantId) => {
-    const plantAndGardenObj = {
-        gardenId : option.value, 
-        plantId : plantId
+const createRelationshipObj = (plantObj) => {
+    const newPlantObj = {
+        userId: parseInt(sessionStorage.getItem("userId")),
+        name: plantObj.name, 
+        height: plantObj.height, 
+        sunExposure: plantObj.sunExposure, 
+        waterRequirements: plantObj.waterRequirements, 
+        imageUrl: plantObj.imageUrl, 
+        hasBeenWatered: false, 
+        nickname: ""
     }
-    API.postPlantToGarden(plantAndGardenObj)
+
+
+    API.postPlantToPersonalPlant(newPlantObj)
+    .then((resp) => resp.json() )
+    .then((plantInfo) => {
+        const personalPlantGardenObj = {
+            gardenId: option.value, 
+            personalPlantId: plantInfo.id
+        }
+        API.postPersonalPlantToGarden(personalPlantGardenObj)
+        window.alert(`Congratulations! You have added ${newPlantObj.name} to ${option.name}`)
+    })
+    
+   
+    
+    
 }
 const handleTextFieldChange = (e) => {
 const stateToChange = {...text}
@@ -47,6 +68,7 @@ stateToChange[e.target.id] = e.target.value
 setText(stateToChange)
 setPlants(e.target.value)
 }
+
 
 
 return ( 
@@ -62,7 +84,7 @@ return (
         </select>
     </p>
     Search:<input id="searchBar" type="text" onChange={handleTextFieldChange}></input>
-    {searchPlants.map(plant => <PlantSearch key={plant.id} name={plant.name} plantId={plant.id}  apiUser={props.apiUser} userId={plant.userId} selectGardens={selectGardens} createRelationshipObj={createRelationshipObj} setPlants={setPlants} {...props}/>) }
+    {searchPlants.map(plant => <PlantSearch key={plant.id} name={plant.name} plantId={plant.id}  apiUser={props.apiUser} userId={plant.userId} selectGardens={selectGardens} plantObj={plant} createRelationshipObj={createRelationshipObj} setPlants={setPlants} {...props}/>) }
     </>
 )
 }
