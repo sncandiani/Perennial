@@ -39,7 +39,7 @@ const AppViews = (props) => {
                         setApiUser(r.id)
                     })
                 } else {
-                    console.log("user already exists")
+                    console.log("")
                 }
             } ) 
             } else {
