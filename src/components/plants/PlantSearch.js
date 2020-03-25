@@ -9,6 +9,8 @@ const PlantSearch = props => {
   const closeSpanModal = () => {
     document.getElementById("myModal").style.display = "none";
   };
+
+  
   return (
     <>
       <h1>{props.name}</h1>
@@ -23,8 +25,8 @@ const PlantSearch = props => {
           <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
           <p>{props.plantObj.name}</p>
           <p>{props.plantObj.height}</p>
-          <p>{props.plantObj.sunExposure}</p>
-          <p>{props.plantObj.waterRequirements}</p>
+          <p>{props.plantObj.sunExposureType.sunExposure}</p>
+          <p>{props.plantObj.waterRequirementType.waterRequirement}</p>
         </div>
       </div>
       <button

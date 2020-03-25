@@ -111,6 +111,15 @@ const API = {
     }, 
     getPersonalPlants() {
         return fetch(baseUrl + "personalPlants").then(resp => resp.json())
+    }, 
+    getSunExposureAndWaterRequirementType() {
+       return fetch(baseUrl + "plants/?_expand=waterRequirementType&_expand=sunExposureType").then(resp => resp.json())
+    }, 
+    getSunExposureType() {
+        return fetch(baseUrl + "sunExposureTypes").then(resp => resp.json())
+    }, 
+    getWaterRequirementType() {
+        return fetch(baseUrl + "waterRequirementTypes").then(resp => resp.json())
     }
 }
 

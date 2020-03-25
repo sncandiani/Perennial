@@ -2,9 +2,30 @@ import React, {useState, useEffect} from "react"
 import API from "../../modules/ApiManager"
 
 const PlantContributeForm = (props) => {
-    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposure: "", waterRequirements: "", imageUrl: ""})
+    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposureType: "", waterRequirementType: "", imageUrl: ""})
     const [isLoading, setIsLoading] = useState(false)
+    const [sunExposures, setSunExposures] = useState([])
+    const [waterRequirements, setWaterRequirements] = useState([])
     //value of plants will be taken in with every change
+
+    const getSunExposures = () => {
+      API.getSunExposureType().then((sunExposureArr) => {
+        setSunExposures(sunExposureArr)
+      })
+
+    }
+
+    const getWaterRequirements = () => {
+      API.getWaterRequirementType().then((waterRequirementArr) => {
+        setWaterRequirements(waterRequirementArr)
+      })
+    }
+
+    useEffect(() => {
+      getSunExposures()
+      getWaterRequirements()
+    }, [])
+   
     const handleFieldChange = (e) => {
         const stateToChange = {...plants} 
         stateToChange[e.target.id] = e.target.value
@@ -13,7 +34,7 @@ const PlantContributeForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(plants.name === "" || plants.height === "" || plants.sunExposure === "" || plants.waterRequirements === "" || plants.imageUrl === ""){
+        if(plants.name === "" || plants.height === "" || plants.sunExposureType === "" || plants.waterRequirementType === "" || plants.imageUrl === ""){
             window.alert("Please complete all fields.")
         } else {
             setIsLoading(true)
@@ -21,6 +42,8 @@ const PlantContributeForm = (props) => {
             .then(() => props.history.push("/searchplants"))
         }
     }
+
+
     return (
         <form>
             
@@ -47,29 +70,27 @@ const PlantContributeForm = (props) => {
           placeholder="Height"
         />
         </div>
-
-        <div className="formContent">
-        <label htmlFor="sunExposure">Sun Exposure:</label> <span></span>
-        <input
-          type="text"
-          required
-          onChange={handleFieldChange}
-          id="sunExposure"
-          placeholder="Sun Exposure"
-        />
-        </div>
-
-        <div className="formContent">
-        <label htmlFor="waterRequirements">Water Requirements:</label> <span></span>
-        <input
-          type="text"
-          required
-          onChange={handleFieldChange}
-          id="waterRequirements"
-          placeholder="Water Requirements"
-        />
-        </div>
-
+          <label>
+      Sun Exposure:
+      <input list="sunExposures" onChange={handleFieldChange} name="mySunExposure" />  
+        </label>   
+        <datalist id="sunExposures">
+          {sunExposures.map((sunExposureInfo) => 
+            <option key={sunExposureInfo.id}>{sunExposureInfo.sunExposure}</option>
+          )}
+     
+  </datalist>
+            
+  <label>
+      Water Requirements:
+      <input list="waterRequirements" onChange={handleFieldChange} name="myWaterRequirements" />  
+        </label>   
+        <datalist id="waterRequirements">
+        {waterRequirements.map((waterRequirementInfo) => 
+            <option key={waterRequirementInfo.id}>{waterRequirementInfo.waterRequirement}</option>
+          )}
+     
+  </datalist>
         <div className="formContent">
         <label htmlFor="imageUrl">Image:</label> <span></span>
         <input

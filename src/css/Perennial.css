@@ -10,6 +10,7 @@ button {
     color: #fffaf7;
     font-family: 'Spectral', serif;
     border-radius: 5px;
+    transition: .6s;
 }
 fieldset {
     border: none;
@@ -29,6 +30,7 @@ input {
 
 button:hover {
     background-color: #97c582;
+    transition: .6s;
 }
 /* LOGIN SECTION */
 .loginSect {
@@ -60,6 +62,7 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+
 
 .loginName {
     text-decoration: none;
@@ -127,6 +130,7 @@ button:hover {
     color: #184b3b;
     font-family: 'Spectral', serif;
     text-decoration: none;
+    transition: .6s;
 }
 
 .firebaseui-link:hover {

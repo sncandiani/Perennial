@@ -17,16 +17,16 @@
       "userId": 2,
       "name": "Noakleaf",
       "height": "6-8 ft.",
-      "sunExposure": "Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 2,
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312"
     },
     {
       "userId": 1,
       "name": "Yellow-Flowered Lambs' Ear",
       "height": "6-12 in.",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 1,
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2019/04/28/Kell/8e981a.jpg&widht=700&height=312",
       "id": 3
     }
@@ -125,6 +125,26 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 7
+    }
+  ], 
+  "sunExposureTypes": [
+    {
+      "id": 1, 
+      "sunExposure": "Full Sun"
+    },
+    {
+      "id": 2, 
+      "sunExposure": "Sun to Partial Shade"
+    }
+  ], 
+  "waterRequirementTypes": [
+    {
+      "id": 1, 
+      "waterRequirement": "Average Water Needs; Water regularly; do not overwater"
+    }, 
+    {
+      "id": 2, 
+      "waterRequirement": "Little to no water"
     }
   ]
 }

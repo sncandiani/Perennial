@@ -11,13 +11,14 @@
     padding-bottom: 25px;
 }
 
-a {
+.navLinks {
     text-decoration: none;
     transition: .6s;
     color: #fffaf7;
+    font-size: 19.5px;
 }
 
-a:hover {
+.navLinks:hover {
     text-decoration: none;
     transition: .6s;
     color: #f08f34;

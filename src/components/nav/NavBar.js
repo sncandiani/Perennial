@@ -8,16 +8,16 @@ const NavBar = props => {
     <nav>
       <ul className="navList">
         <li>
-          <a href="http://localhost:3000/">Home</a>
+          <a className="navLinks" href="http://localhost:3000/">Home</a>
         </li>
         <li>
-          <a href="http://localhost:3000/gardens">Gardens</a>
+          <a className="navLinks" href="http://localhost:3000/gardens">Gardens</a>
         </li>
         <li>
-          <a href="http://localhost:3000/searchplants">Search</a>
+          <a className="navLinks"  href="http://localhost:3000/searchplants">Search</a>
         </li>
         <li>
-          <a
+          <a className="navLinks"
             href="http://localhost:3000/"
             onClick={() => {
               firebase.auth().signOut();
