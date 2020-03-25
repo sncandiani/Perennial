@@ -17,7 +17,7 @@ const GardenForm = (props) => {
         } else {
             setIsLoading(true)
             API.postGarden(gardens)
-            .then(() => props.history.push("/"))
+            .then(() => props.history.push("/gardens"))
         }
     }
     return (
