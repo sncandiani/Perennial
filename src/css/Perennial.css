@@ -37,8 +37,25 @@ button:hover {
     align-content: center;
     font-size: 50px;
     flex-direction: column;
+    height: 100vh
+}
+.firebaseui-textfield.mdl-textfield .firebaseui-label::after {
+    background-color: #97c582;
+}
+.firebaseui-id-idp-button{
+    background-color: #184b3b !important;
+    font-family: 'Spectral', serif;
+    transition: 1s;
 }
 
+.firebaseui-idp-text {
+    color: #fffaf7 !important;
+}
+
+.firebaseui-id-idp-button:hover {
+    background-color: #97c582 !important;
+    transition: 1s;
+}
 .siteOpener {
     display: flex;
     justify-content: center;
@@ -51,7 +68,7 @@ button:hover {
 }
 
 .loginName:hover {
-   color: #97c582;
+   color: #f08f34;
    transition: 1s;
 }
 .action {
@@ -98,11 +115,13 @@ button:hover {
 .mdl-button--raised.mdl-button--colored {
     font-family: 'Spectral', serif;
     background: #184b3b;
-    color: #fffaf7
+    color: #fffaf7;
+    transition: .6s;
 }
 .mdl-button--raised.mdl-button--colored:hover {
     background: #97c582;
-    color: #fffaf7
+    color: #fffaf7;
+    transition: .6s;
 }
 .firebaseui-link {
     color: #184b3b;

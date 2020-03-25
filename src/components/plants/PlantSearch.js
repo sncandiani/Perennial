@@ -20,11 +20,11 @@ const PlantSearch = props => {
           <span onClick={closeSpanModal} className="close">
             &times;
           </span>
-          <img width="100px" height="100px"src={props.imageUrl}></img>
-          <p>{props.name}</p>
-          <p>{props.height}</p>
-          <p>{props.sunExposure}</p>
-          <p>{props.waterRequirements}</p>
+          <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
+          <p>{props.plantObj.name}</p>
+          <p>{props.plantObj.height}</p>
+          <p>{props.plantObj.sunExposure}</p>
+          <p>{props.plantObj.waterRequirements}</p>
         </div>
       </div>
       <button
