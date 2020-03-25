@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react"
 import { Route, Redirect } from "react-router-dom";
 import Home from "../src/components/home/Home"
 import Login from "../src/components/auth/Login"
+import GardenDashboard from "../src/components/gardens/GardenDashboard"
 import GardenForm from "../src/components/gardens/GardenForm"
 import GardenEditForm from "../src/components/gardens/GardenEditForm"
 import GardenDetail from "../src/components/gardens/GardenDetail"
@@ -65,39 +66,46 @@ const AppViews = (props) => {
                 />
                 <Route
                     exact
+                    path="/gardens"
+                    render={props => 
+                    firebaseUser && apiUser != null ? <GardenDashboard firebaseUser={firebaseUser} apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                    }
+                />
+                <Route
+                    exact
                     path="/addgarden"
                     render={props => 
-                    firebaseUser && apiUser != null ? <GardenForm {...props}/> : <Login />
+                    firebaseUser && apiUser != null ? <GardenForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
                     }
                 />
                 <Route
                 exact path="/gardens/:gardenId(\d+)/"
                 render={props => 
-                firebaseUser && apiUser != null ? <GardenDetail gardenId={parseInt(props.match.params.gardenId)} apiUser={apiUser} {...props}/> : <Login />
+                firebaseUser && apiUser != null ? <GardenDetail gardenId={parseInt(props.match.params.gardenId)} apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
                 }
             />
                 <Route
                 exact path="/gardens/:gardenId(\d+)/edit"
                 render={props => 
-                firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <Login />
+                firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
                 }
             />
             <Route
                  exact path="/plants/:plantId(\d+)/edit"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantEditForm apiUser={apiUser} {...props}/> : <Login />
+                firebaseUser && apiUser != null ? <PlantEditForm apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
                 }
             />
             <Route
                 path="/searchplants"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantList apiUser={apiUser} {...props}/> : <Login />
+                firebaseUser && apiUser != null ? <PlantList apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
                 }
             />
             <Route
                 path="/contributeplant"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <Login />
+                firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
                 }
             />
     </React.Fragment>

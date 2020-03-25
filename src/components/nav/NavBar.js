@@ -9,17 +9,22 @@ const NavBar = (props) => {
         <nav>
                 <ul className="navList">
                     <li>
-                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#160D58' }} to="/">
+                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#fffaf7' }} to="/">
                             Home
             </Link>
                     </li>
                     <li>
-                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#160D58' }} to="/searchplants">
+                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#fffaf7' }} to="/gardens">
+                            Gardens
+            </Link>
+                    </li>
+                    <li>
+                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#fffaf7' }} to="/searchplants">
                             Search
             </Link>
                     </li>
                     <li>
-                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#160D58' }} to="/" onClick={() => {firebase.auth().signOut()}}>
+                        <Link className="nav-link" style={{ textDecoration: 'none', color: '#fffaf7' }} to="/" onClick={() => {firebase.auth().signOut()}}>
                         Logout
             </Link>
                     </li>

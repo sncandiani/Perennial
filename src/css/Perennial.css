@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:600&display=swap');
+/* GENERAL */
+body {
+    background-color:  #fffaf7;
+    font-family: 'Spectral', serif;
+    color: #184b3b; 
+}
+button {
+    background-color: #184b3b;
+    color: #fffaf7;
+    font-family: 'Spectral', serif;
+    border-radius: 5px;
+}
+fieldset {
+    border: none;
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+
+input:focus-within {
+    background-color: #f1e2e3;
+  }
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fffaf7;
+}
+
+button:hover {
+    background-color: #97c582;
+}
+/* LOGIN SECTION */
+.loginSect {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    flex-direction: column;
+}
+
+.siteOpener {
+    display: flex;
+    justify-content: center;
+}
+
+
+#firebaseui-auth-container {
+    display: flex;
+    
+
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    font-size: 40px;
+    color: #184b3b;
+}
+/* HOME */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.addGardenBtn {
+    width: 10%;
+}
+
+.welcomeHeader {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* GARDEN */
+.content-card {
+    display: flex;
+    justify-content: center; 
+}
+
+.select {
+    position: relative; 
+    display: block; 
+    width: 15em; 
+    height: 2em; 
+    line-height: 3; 
+    overflow: hidden; 
+    border-radius: .25em; 
+    padding-bottom:10px; 
+    font-family: 'Spectral', serif;
+    background-color: white;
+}
+
+/* PLANT SEARCH */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1.5px solid #f08f34;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #184b3b;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -33,7 +33,12 @@ const Login = () => {
     
     return (
         <>
-        <div id="firebaseui-auth-container"></div>
+        <div className="loginSect">
+          <div className="siteOpener">
+            Perennial
+          </div>
+          <div id="firebaseui-auth-container"></div>
+        </div>
         <div id="loader">Loading...</div>
         </>
     )

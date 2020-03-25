@@ -13,15 +13,6 @@
   ],
   "plants": [
     {
-      "userId": 1,
-      "name": "Daylily 'Kwanso'",
-      "height": "4-6 ft",
-      "sunExposure": "Full Sun, Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
-      "id": 1
-    },
-    {
       "id": 2,
       "userId": 2,
       "name": "Noakleaf",
@@ -29,6 +20,15 @@
       "sunExposure": "Sun to Partial Shade",
       "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312"
+    },
+    {
+      "userId": 1,
+      "name": "Yellow-Flowered Lambs' Ear",
+      "height": "6-12 in.",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2019/04/28/Kell/8e981a.jpg&widht=700&height=312",
+      "id": 3
     }
   ],
   "gardens": [
@@ -39,14 +39,6 @@
       "gardenLocation": "Backyard",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-11W-OXoUE9w%2FT_bXYrKxLuI%2FAAAAAAAABBk%2FDuFgHd3NALI%2Fs1600%2Fws_strafford_hydrangea_1600x1200.jpg&f=1&nofb=1",
       "id": 2
-    },
-    {
-      "userId": 1,
-      "name": "sofias first garden",
-      "dateCreated": "2020-03-03",
-      "gardenLocation": "slfj",
-      "imageUrl": "sdlkfj",
-      "id": 3
     }
   ],
   "gardensAndPlants": [
@@ -54,16 +46,6 @@
       "gardenId": 2,
       "personalPlantId": 3,
       "id": 2
-    },
-    {
-      "gardenId": 3,
-      "personalPlantId": 4,
-      "id": 3
-    },
-    {
-      "gardenId": 3,
-      "personalPlantId": 5,
-      "id": 4
     }
   ],
   "personalPlants": [
@@ -121,6 +103,28 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "Daylily 'Kwanso'",
+      "height": "4-6 ft",
+      "sunExposure": "Full Sun, Sun to Partial Shade",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "some plant",
+      "height": "dlkjflkj",
+      "sunExposure": "sdlkfjfklj",
+      "waterRequirements": "sdflkjflkj",
+      "imageUrl": "sdlkfjflkj",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 7
     }
   ]
 }
