@@ -14,10 +14,6 @@ button {
 fieldset {
     border: none;
 }
-form {
-    display: flex;
-    justify-content: center;
-}
 
 input:focus-within {
     background-color: #f1e2e3;
@@ -28,6 +24,7 @@ input {
     border-left: none;
     border-right: none;
     background-color: #fffaf7;
+    text-rendering: auto;
 }
 
 button:hover {
@@ -47,13 +44,49 @@ button:hover {
     justify-content: center;
 }
 
+.loginName {
+    text-decoration: none;
+    color: #184b3b;
+    transition: 1s;
+}
 
+.loginName:hover {
+   color: #97c582;
+   transition: 1s;
+}
+.action {
+    border: 20px solid red;
+}
 #firebaseui-auth-container {
     display: flex;
     
-
+}
+.mdl-button--primary.mdl-button--primary {
+    font-family: 'Spectral', serif;
+    color: #184b3b;
+}
+.mdl-button--primary.mdl-button--primary:hover {
+    background-color: #fffaf7;
+}
+.firebaseui-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Spectral', serif;
+    color: #184b3b;
+}
+.firebaseui-textfield.mdl-textfield {
+    font-family: 'Spectral', serif;
 }
 
+
+.firebaseui-textfield.mdl-textfield .firebaseui-input {
+    border-color: rgba(0,0,0,.12);
+    border-top-color: #184b3b;
+    border-right-color: #184b3b;
+    border-bottom-color: #184b3b;
+    border-left-color: #184b3b;
+    font-family: 'Spectral', serif;
+}
 #loading {
     display: flex;
     justify-content: center;
@@ -61,6 +94,27 @@ button:hover {
     font-size: 40px;
     color: #184b3b;
 }
+
+.mdl-button--raised.mdl-button--colored {
+    font-family: 'Spectral', serif;
+    background: #184b3b;
+    color: #fffaf7
+}
+.mdl-button--raised.mdl-button--colored:hover {
+    background: #97c582;
+    color: #fffaf7
+}
+.firebaseui-link {
+    color: #184b3b;
+    font-family: 'Spectral', serif;
+    text-decoration: none;
+}
+
+.firebaseui-link:hover {
+    color: #97c582;
+    text-decoration: none;
+}
+
 /* HOME */
 
 .dashboard {
