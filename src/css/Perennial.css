@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral:600&display=swap');
+/* GENERAL */
+body {
+    background-color:  #fffaf7;
+    font-family: 'Spectral', serif;
+    color: #184b3b; 
+}
+button {
+    background-color: #184b3b;
+    color: #fffaf7;
+    font-family: 'Spectral', serif;
+    border-radius: 5px;
+}
+fieldset {
+    border: none;
+}
+
+input:focus-within {
+    background-color: #f1e2e3;
+  }
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fffaf7;
+    text-rendering: auto;
+}
+
+button:hover {
+    background-color: #97c582;
+}
+/* LOGIN SECTION */
+.loginSect {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 50px;
+    flex-direction: column;
+    height: 100vh
+}
+.firebaseui-textfield.mdl-textfield .firebaseui-label::after {
+    background-color: #97c582;
+}
+.firebaseui-id-idp-button{
+    background-color: #184b3b !important;
+    font-family: 'Spectral', serif;
+    transition: 1s;
+}
+
+.firebaseui-idp-text {
+    color: #fffaf7 !important;
+}
+
+.firebaseui-id-idp-button:hover {
+    background-color: #97c582 !important;
+    transition: 1s;
+}
+.siteOpener {
+    display: flex;
+    justify-content: center;
+}
+
+.loginName {
+    text-decoration: none;
+    color: #184b3b;
+    transition: 1s;
+}
+
+.loginName:hover {
+   color: #f08f34;
+   transition: 1s;
+}
+.action {
+    border: 20px solid red;
+}
+#firebaseui-auth-container {
+    display: flex;
+    
+}
+.mdl-button--primary.mdl-button--primary {
+    font-family: 'Spectral', serif;
+    color: #184b3b;
+}
+.mdl-button--primary.mdl-button--primary:hover {
+    background-color: #fffaf7;
+}
+.firebaseui-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Spectral', serif;
+    color: #184b3b;
+}
+.firebaseui-textfield.mdl-textfield {
+    font-family: 'Spectral', serif;
+}
+
+
+.firebaseui-textfield.mdl-textfield .firebaseui-input {
+    border-color: rgba(0,0,0,.12);
+    border-top-color: #184b3b;
+    border-right-color: #184b3b;
+    border-bottom-color: #184b3b;
+    border-left-color: #184b3b;
+    font-family: 'Spectral', serif;
+}
+#loading {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    font-size: 40px;
+    color: #184b3b;
+}
+
+.mdl-button--raised.mdl-button--colored {
+    font-family: 'Spectral', serif;
+    background: #184b3b;
+    color: #fffaf7;
+    transition: .6s;
+}
+.mdl-button--raised.mdl-button--colored:hover {
+    background: #97c582;
+    color: #fffaf7;
+    transition: .6s;
+}
+.firebaseui-link {
+    color: #184b3b;
+    font-family: 'Spectral', serif;
+    text-decoration: none;
+}
+
+.firebaseui-link:hover {
+    color: #97c582;
+    text-decoration: none;
+}
+
+/* HOME */
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.addGardenBtn {
+    width: 10%;
+}
+
+.welcomeHeader {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* GARDEN */
+.content-card {
+    display: flex;
+    justify-content: center; 
+}
+
+.select {
+    position: relative; 
+    display: block; 
+    width: 15em; 
+    height: 2em; 
+    line-height: 3; 
+    overflow: hidden; 
+    border-radius: .25em; 
+    padding-bottom:10px; 
+    font-family: 'Spectral', serif;
+    background-color: white;
+}
+
+/* PLANT SEARCH */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1.5px solid #f08f34;
+    border-radius: 10px;
+    width: 80%;
+    height: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #184b3b;
+    text-decoration: none;
+    cursor: pointer;
+  }

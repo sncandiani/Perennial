@@ -52,7 +52,7 @@ const API = {
         return fetch(baseUrl + "gardens/" + gardenId ).then(resp => resp.json())
     }, 
     findAssociatedPlants() {
-        return fetch(baseUrl + "gardensAndPlants/?_expand=plant").then(resp => resp.json())
+        return fetch(baseUrl + "gardensAndPlants?_expand=personalPlant").then(resp => resp.json())
     }, 
     getAllPlants() {
         return fetch(baseUrl + "plants").then(resp => resp.json())
@@ -66,7 +66,7 @@ const API = {
             body: JSON.stringify(plant)
         })
     }, 
-    postPlantToGarden(gardenAndPlantId) {
+    postPersonalPlantToGarden(gardenAndPlantId) {
         return fetch(baseUrl + "gardensAndPlants", {
             method: "POST", 
             headers: {
@@ -99,6 +99,18 @@ const API = {
         return fetch(baseUrl + "plants/" + id, {
             method: "DELETE"
         });
+    }, 
+    postPlantToPersonalPlant(plant) {
+        return fetch(baseUrl + "personalPlants", {
+            method: "POST", 
+            headers: {
+                "Content-Type": "application/json"
+            }, 
+            body: JSON.stringify(plant)
+        })
+    }, 
+    getPersonalPlants() {
+        return fetch(baseUrl + "personalPlants").then(resp => resp.json())
     }
 }
 
