@@ -11,3 +11,14 @@
     padding-bottom: 25px;
 }
 
+a {
+    text-decoration: none;
+    transition: .6s;
+    color: #fffaf7;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: .6s;
+    color: #f08f34;
+}
