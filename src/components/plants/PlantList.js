@@ -87,10 +87,25 @@ const PlantList = props => {
 
   const handleSunExpChange = e => {
       const stateToChange = {...sunExposures}
-      stateToChange[e.target.id] = e.target.value;
-      console.log(stateToChange)
+      stateToChange[e.target.id] = parseInt(e.target.value)
+      API.getSunExposureAndWaterRequirementType().then(plants => {
+        const filteredPlants = plants.filter(plant => {
+          return plant.sunExposureTypeId === stateToChange.sunExposureList;
+        });
+        setSearchPlants(filteredPlants);
+      });
   }
 
+  const handleWaterReqChange = e => {
+    const stateToChange = {...waterRequirements}
+    stateToChange[e.target.id] = parseInt(e.target.value)
+    API.getSunExposureAndWaterRequirementType().then(plants => {
+      const filteredPlants = plants.filter(plant => {
+        return plant.waterRequirementTypeId === stateToChange.waterRequirementList;
+      });
+      setSearchPlants(filteredPlants);
+    });
+}
   return (
     <>
     <p>
@@ -131,12 +146,19 @@ const PlantList = props => {
       <p>Search by Sun Exposure: </p>
       <select className="select" id="sunExposureList" onChange={handleSunExpChange}>
                {sunExposures.map(sunExposureInfo => {
-                 return <option key={sunExposureInfo.id} value={sunExposureInfo.id}>
+                 return <><option></option><option key={sunExposureInfo.id} value={sunExposureInfo.id}>
                  {sunExposureInfo.sunExposure}
-               </option>
+               </option></>
               })} 
     </select>
       <p>Search by Water Requirements: </p>
+      <select className="select" id="waterRequirementList" onChange={handleWaterReqChange}>
+               {waterRequirements.map(waterRequirementInfo => {
+                 return <><option></option> <option key={waterRequirementInfo.id} value={waterRequirementInfo.id}>
+                 {waterRequirementInfo.waterRequirement}
+               </option></>
+              })} 
+    </select>
       {searchPlants.map(plant => (
         <PlantSearch
           key={plant.id}

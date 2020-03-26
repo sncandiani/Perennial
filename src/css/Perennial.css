@@ -213,3 +213,26 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* CONTRIBUTE PLANT */
+  .contributePlantForm {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     height: 100vh;
+    
+  }
+
+  .contributePlantFieldset {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1.5px solid #f08f34;
+      padding: 75px;
+  }
+
+  .formContent {
+      padding-bottom: 25px;
+      font-size: 20px;
+  }
+  
