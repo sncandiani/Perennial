@@ -9,6 +9,8 @@ const PlantList = props => {
   ]);
   const [option, setOption] = useState({ value: "" });
   const [text, setText] = useState("");
+  const [sunExposures, setSunExposures] = useState([]);
+  const [waterRequirements, setWaterRequirements] = useState([]);
 
   const setPlants = textValue => {
     API.getSunExposureAndWaterRequirementType().then(plants => {
@@ -33,7 +35,20 @@ const PlantList = props => {
         setOption(stateToChange);
       }
     });
+    getSunExposures()
+    getWaterRequirements()
   }, []);
+  const getSunExposures = () => {
+    API.getSunExposureType().then(sunExposureArr => {
+      setSunExposures(sunExposureArr);
+    });
+  };
+
+  const getWaterRequirements = () => {
+    API.getWaterRequirementType().then(waterRequirementArr => {
+      setWaterRequirements(waterRequirementArr);
+    });
+  };
   const handleChange = e => {
     const stateToChange = { ...option };
     stateToChange["value"] = parseInt(e.target.value);
@@ -70,6 +85,12 @@ const PlantList = props => {
     setPlants(e.target.value);
   };
 
+  const handleSunExpChange = e => {
+      const stateToChange = {...sunExposures}
+      stateToChange[e.target.id] = e.target.value;
+      console.log(stateToChange)
+  }
+
   return (
     <>
     <p>
@@ -79,6 +100,7 @@ const PlantList = props => {
       >
         Contribute plant
       </button>
+    </p>
       <p>
         <label>Select Garden</label>
         <select className="select" id="myGardenList" onChange={handleChange}>
@@ -99,7 +121,7 @@ const PlantList = props => {
               })}
         </select>
       </p>
-    </p>
+  
       Search by name:
       <input
         id="searchBar"
@@ -107,6 +129,13 @@ const PlantList = props => {
         onKeyPress={handleTextFieldChange}
       ></input>
       <p>Search by Sun Exposure: </p>
+      <select className="select" id="sunExposureList" onChange={handleSunExpChange}>
+               {sunExposures.map(sunExposureInfo => {
+                 return <option key={sunExposureInfo.id} value={sunExposureInfo.id}>
+                 {sunExposureInfo.sunExposure}
+               </option>
+              })} 
+    </select>
       <p>Search by Water Requirements: </p>
       {searchPlants.map(plant => (
         <PlantSearch

@@ -126,24 +126,24 @@
       "nickname": "",
       "id": 7
     }
-  ], 
+  ],
   "sunExposureTypes": [
     {
-      "id": 1, 
+      "id": 1,
       "sunExposure": "Full Sun"
     },
     {
-      "id": 2, 
+      "id": 2,
       "sunExposure": "Sun to Partial Shade"
     }
-  ], 
+  ],
   "waterRequirementTypes": [
     {
-      "id": 1, 
+      "id": 1,
       "waterRequirement": "Average Water Needs; Water regularly; do not overwater"
-    }, 
+    },
     {
-      "id": 2, 
+      "id": 2,
       "waterRequirement": "Little to no water"
     }
   ]

@@ -16,9 +16,7 @@ fieldset {
     border: none;
 }
 
-input:focus-within {
-    background-color: #f1e2e3;
-  }
+
 
 input {
     border-top: none;
