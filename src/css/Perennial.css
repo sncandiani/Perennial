@@ -16,8 +16,6 @@ fieldset {
     border: none;
 }
 
-
-
 input {
     border-top: none;
     border-left: none;
@@ -29,6 +27,39 @@ input {
 button:hover {
     background-color: #97c582;
     transition: .6s;
+}
+
+.specialForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+  
+}
+
+.specialFieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #f08f34;
+    padding: 75px;
+}
+
+.formContent {
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+/* LOADING */
+
+.loadingPage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    height: 100vh;
+
 }
 /* LOGIN SECTION */
 .loginSect {
@@ -187,8 +218,32 @@ button:hover {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+  .contributePlantBtn {
+      display: flex;
+      justify-content: center;
+  }
   
-  /* Modal Content/Box */
+  .searchOptions {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+
+  }
+
+  /* .plantSearchResults {
+      display: flex;
+      justify-content: center;
+      background-color: white;
+
+  } */
+
+  .selectGarden {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 25px;
+  }
+  /* MODAL CONTENT FOR SEARCH */
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
@@ -214,25 +269,5 @@ button:hover {
     cursor: pointer;
   }
 
-  /* CONTRIBUTE PLANT */
-  .contributePlantForm {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-     height: 100vh;
-    
-  }
 
-  .contributePlantFieldset {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid #f08f34;
-      padding: 75px;
-  }
-
-  .formContent {
-      padding-bottom: 25px;
-      font-size: 20px;
-  }
   

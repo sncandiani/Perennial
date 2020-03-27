@@ -12,6 +12,7 @@ import PlantEditForm from "../src/components/plants/PlantEditForm"
 import firebase from 'firebase/app'
 import API from "../src/modules/ApiManager"
 import NavBar from "../src/components/nav/NavBar"
+import Loading from "../src/components/loading/Loading"
 
 
 
@@ -56,56 +57,64 @@ const AppViews = (props) => {
             {firebaseUser && apiUser != null ? <NavBar /> : null}
             
             <React.Fragment>
-              
-                <Route
+
+            <Route
                     exact
                     path="/"
                     render={props => 
-                    firebaseUser && apiUser != null ? <Home firebaseUser={firebaseUser} apiUser={apiUser} {...props}/> : <Login />
+                     <Login />
+                    }
+                />
+              
+                <Route
+                    exact
+                    path="/home"
+                    render={props => 
+                    firebaseUser && apiUser != null ? <Home firebaseUser={firebaseUser} apiUser={apiUser} {...props}/> : <Loading />
                     }
                 />
                 <Route
                     exact
                     path="/gardens"
                     render={props => 
-                    firebaseUser && apiUser != null ? <GardenDashboard firebaseUser={firebaseUser} apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                    firebaseUser && apiUser != null ? <GardenDashboard firebaseUser={firebaseUser} apiUser={apiUser} {...props}/> : <Loading />
                     }
                 />
                 <Route
                     exact
                     path="/addgarden"
                     render={props => 
-                    firebaseUser && apiUser != null ? <GardenForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                    firebaseUser && apiUser != null ? <GardenForm {...props}/> : <Loading />
                     }
                 />
                 <Route
                 exact path="/gardens/:gardenId(\d+)/"
                 render={props => 
-                firebaseUser && apiUser != null ? <GardenDetail gardenId={parseInt(props.match.params.gardenId)} apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                firebaseUser && apiUser != null ? <GardenDetail gardenId={parseInt(props.match.params.gardenId)} apiUser={apiUser} {...props}/> : <Loading />
                 }
             />
                 <Route
                 exact path="/gardens/:gardenId(\d+)/edit"
                 render={props => 
-                firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                firebaseUser && apiUser != null ? <GardenEditForm {...props}/> : <Loading />
                 }
             />
             <Route
                  exact path="/plants/:plantId(\d+)/edit"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantEditForm apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                firebaseUser && apiUser != null ? <PlantEditForm apiUser={apiUser} {...props}/> : <Loading />
                 }
             />
             <Route
                 path="/searchplants"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantList apiUser={apiUser} {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                firebaseUser && apiUser != null ? <PlantList apiUser={apiUser} {...props}/> : <Loading />
                 }
             />
             <Route
                 path="/contributeplant"
                 render={props => 
-                firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <> <h1 className="loading">Loading...</h1></>
+                firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <Loading />
                 }
             />
     </React.Fragment>

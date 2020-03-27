@@ -37,9 +37,9 @@ const GardenEditForm = (props) => {
     }, [props.match.params.gardenId])
 
     return (
-        <form>
+        <form className="specialForm">
             
-        <fieldset>
+        <fieldset className="specialFieldset">
 
         <div className="formContent">
         <label htmlFor="name">Garden Name:</label> <span></span>

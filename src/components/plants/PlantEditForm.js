@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import API from "../../modules/ApiManager"
 
 const PlantEditForm = (props) => {
-    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposure: "", waterRequirements: "", imageUrl: ""})
+    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposureTypeId: null, waterRequirementTypeId: null, imageUrl: ""})
     const [isLoading, setIsLoading] = useState(false)
     
     //value of plants will be taken in with every change
@@ -19,8 +19,8 @@ const PlantEditForm = (props) => {
             userId: plants.userId,
             name: plants.name, 
             height: plants.height,
-            sunExposure: plants.sunExposure, 
-            waterRequirements: plants.waterRequirements,
+            sunExposureTypeId: plants.sunExposureTypeId.id, 
+            waterRequirementTypeId: plants.waterRequirementTypeId.id,
             imageUrl: plants.imageUrl
         }
         API.updatePlant(editedPlant)
@@ -36,11 +36,11 @@ const PlantEditForm = (props) => {
         })
     }, [props.match.params.plantId])
 
-
+console.log(plants.sunExposureType.sunExposure)
 
     return (       
-            <form>
-            <fieldset>
+            <form className="specialForm">
+            <fieldset className="specialFieldset">
     
             <div className="formContent">
             <label htmlFor="name">Plant Name:</label> <span></span>
@@ -71,7 +71,7 @@ const PlantEditForm = (props) => {
               required
               onChange={handleFieldChange}
               id="sunExposure"
-              value={plants.sunExposure}
+              value={plants.sunExposureType}
             />
             </div>
     
@@ -82,7 +82,7 @@ const PlantEditForm = (props) => {
               required
               onChange={handleFieldChange}
               id="waterRequirements"
-              value={plants.waterRequirements}
+              value={plants.waterRequirementTypeId}
             />
             </div>
     

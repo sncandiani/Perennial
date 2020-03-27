@@ -35,8 +35,8 @@ const PlantList = props => {
         setOption(stateToChange);
       }
     });
-    getSunExposures()
-    getWaterRequirements()
+    getSunExposures();
+    getWaterRequirements();
   }, []);
   const getSunExposures = () => {
     API.getSunExposureType().then(sunExposureArr => {
@@ -86,38 +86,40 @@ const PlantList = props => {
   };
 
   const handleSunExpChange = e => {
-      const stateToChange = {...sunExposures}
-      stateToChange[e.target.id] = parseInt(e.target.value)
-      API.getSunExposureAndWaterRequirementType().then(plants => {
-        const filteredPlants = plants.filter(plant => {
-          return plant.sunExposureTypeId === stateToChange.sunExposureList;
-        });
-        setSearchPlants(filteredPlants);
-      });
-  }
-
-  const handleWaterReqChange = e => {
-    const stateToChange = {...waterRequirements}
-    stateToChange[e.target.id] = parseInt(e.target.value)
+    const stateToChange = { ...sunExposures };
+    stateToChange[e.target.id] = parseInt(e.target.value);
     API.getSunExposureAndWaterRequirementType().then(plants => {
       const filteredPlants = plants.filter(plant => {
-        return plant.waterRequirementTypeId === stateToChange.waterRequirementList;
+        return plant.sunExposureTypeId === stateToChange.sunExposureList;
       });
       setSearchPlants(filteredPlants);
     });
-}
+  };
+
+  const handleWaterReqChange = e => {
+    const stateToChange = { ...waterRequirements };
+    stateToChange[e.target.id] = parseInt(e.target.value);
+    API.getSunExposureAndWaterRequirementType().then(plants => {
+      const filteredPlants = plants.filter(plant => {
+        return (
+          plant.waterRequirementTypeId === stateToChange.waterRequirementList
+        );
+      });
+      setSearchPlants(filteredPlants);
+    });
+  };
   return (
     <>
-    <p>
-      <button
-        type="contributeBtn"
-        onClick={() => props.history.push(`/contributeplant`)}
-      >
-        Contribute plant
-      </button>
-    </p>
-      <p>
-        <label>Select Garden</label>
+      <p className="contributePlantBtn">
+        <button
+          type="button"
+          onClick={() => props.history.push(`/contributeplant`)}
+        >
+          Contribute plant
+        </button>
+      </p>
+      <p className="selectGarden">
+        <label>Select Garden: </label>
         <select className="select" id="myGardenList" onChange={handleChange}>
           {selectGardens[0].name === "No Gardens Available"
             ? selectGardens.map(garden => {
@@ -136,29 +138,47 @@ const PlantList = props => {
               })}
         </select>
       </p>
-  
-      Search by name:
-      <input
-        id="searchBar"
-        type="text"
-        onKeyPress={handleTextFieldChange}
-      ></input>
-      <p>Search by Sun Exposure: </p>
-      <select className="select" id="sunExposureList" onChange={handleSunExpChange}>
-               {sunExposures.map(sunExposureInfo => {
-                 return <><option></option><option key={sunExposureInfo.id} value={sunExposureInfo.id}>
-                 {sunExposureInfo.sunExposure}
-               </option></>
-              })} 
-    </select>
-      <p>Search by Water Requirements: </p>
-      <select className="select" id="waterRequirementList" onChange={handleWaterReqChange}>
-               {waterRequirements.map(waterRequirementInfo => {
-                 return <><option></option> <option key={waterRequirementInfo.id} value={waterRequirementInfo.id}>
-                 {waterRequirementInfo.waterRequirement}
-               </option></>
-              })} 
-    </select>
+      <div className="searchOptions">
+        Search by name:
+        <input
+          id="searchBar"
+          type="text"
+          onKeyPress={handleTextFieldChange}
+        ></input>
+        Search by Sun Exposure:
+        <select
+          className="select"
+          id="sunExposureList"
+          onChange={handleSunExpChange}
+        >
+          <option></option>
+          {sunExposures.map(sunExposureInfo => {
+            return (
+              <option key={sunExposureInfo.id} value={sunExposureInfo.id}>
+                {sunExposureInfo.sunExposure}
+              </option>
+            );
+          })}
+        </select>
+        Search by Water Requirements:
+        <select
+          className="select"
+          id="waterRequirementList"
+          onChange={handleWaterReqChange}
+        >
+          <option></option>
+          {waterRequirements.map(waterRequirementInfo => {
+            return (
+              <option
+                key={waterRequirementInfo.id}
+                value={waterRequirementInfo.id}
+              >
+                {waterRequirementInfo.waterRequirement}
+              </option>
+            );
+          })}
+        </select>
+      </div>
       {searchPlants.map(plant => (
         <PlantSearch
           key={plant.id}
@@ -173,7 +193,6 @@ const PlantList = props => {
           {...props}
         />
       ))}
-     
     </>
   );
 };

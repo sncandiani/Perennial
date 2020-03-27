@@ -84,10 +84,10 @@ const API = {
         return fetch(baseUrl + "gardensAndPlants").then(resp => resp.json())
     }, 
     editPlant(plantId) {
-        return fetch(baseUrl + "plants/" + plantId ).then(resp => resp.json())
+        return fetch(baseUrl + "plants/" + plantId + "/?_expand=waterRequirementType&_expand=sunExposureType").then(resp => resp.json())
     }, 
     updatePlant(plant) {
-        return fetch(baseUrl + "plants/" + plant.id, {
+        return fetch(baseUrl + "plants/" + plant.id + "/?_expand=waterRequirementType&_expand=sunExposureType", {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

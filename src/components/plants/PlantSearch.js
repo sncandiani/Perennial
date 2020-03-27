@@ -12,7 +12,7 @@ const PlantSearch = props => {
 
   
   return (
-    <>
+    <div className="plantSearchResults">
       <h1>{props.name}</h1>
       <button id="myBtn" onClick={openModal}>
         More Information
@@ -65,7 +65,7 @@ const PlantSearch = props => {
           </button>
         </>
       ) : null}
-    </>
+    </div>
   );
 };
 

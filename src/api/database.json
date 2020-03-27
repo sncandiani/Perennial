@@ -29,6 +29,15 @@
       "waterRequirementTypeId": 1,
       "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2019/04/28/Kell/8e981a.jpg&widht=700&height=312",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "test plant",
+      "height": "6",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 1,
+      "imageUrl": "url",
+      "id": 4
     }
   ],
   "gardens": [
@@ -39,6 +48,14 @@
       "gardenLocation": "Backyard",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-11W-OXoUE9w%2FT_bXYrKxLuI%2FAAAAAAAABBk%2FDuFgHd3NALI%2Fs1600%2Fws_strafford_hydrangea_1600x1200.jpg&f=1&nofb=1",
       "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "Sofias first garden",
+      "dateCreated": "2020-03-03",
+      "gardenLocation": "dsflj",
+      "imageUrl": "sdlkj",
+      "id": 3
     }
   ],
   "gardensAndPlants": [
@@ -125,6 +142,15 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "Noakleaf",
+      "height": "6-8 ft.",
+      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 8
     }
   ],
   "sunExposureTypes": [

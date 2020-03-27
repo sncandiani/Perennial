@@ -21,9 +21,9 @@ const GardenForm = (props) => {
         }
     }
     return (
-        <form>
+        <form className="specialForm">
             
-        <fieldset>
+        <fieldset className="specialFieldset">
 
         <div className="formContent">
         <label htmlFor="name">Garden Name:</label> <span></span>
