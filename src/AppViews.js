@@ -117,6 +117,7 @@ const AppViews = (props) => {
                 firebaseUser && apiUser != null ? <PlantContributeForm {...props}/> : <Loading />
                 }
             />
+
     </React.Fragment>
     </>
     )

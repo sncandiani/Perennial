@@ -1,20 +1,21 @@
-.navList {
+
+
+ .navList {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
     text-decoration: none;
     padding-bottom: 5px;
-    background-color: #184b3b;
+    color: #fffaf7;
     margin: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
 .navLinks {
     text-decoration: none;
     transition: .6s;
-    color: #fffaf7;
+    color: #184b3b;
     font-size: 19.5px;
 }
 
@@ -23,3 +24,4 @@
     transition: .6s;
     color: #f08f34;
 }
+

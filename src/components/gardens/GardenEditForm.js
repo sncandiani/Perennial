@@ -40,7 +40,7 @@ const GardenEditForm = (props) => {
         <form className="specialForm">
             
         <fieldset className="specialFieldset">
-
+        <h1 className="formTitle">Edit Garden</h1>
         <div className="formContent">
         <label htmlFor="name">Garden Name:</label> <span></span>
         <input

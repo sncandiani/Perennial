@@ -4,6 +4,7 @@ import API from "../../modules/ApiManager"
 const GardenCard = (props) => {
     return (
         <div className="card-content" >
+            <img src={props.garden.imageUrl}></img>
             <p className="gardenName"> {props.garden.name}</p>
                 <div className="crudButtons">
                     <button className="editButton" type="button" onClick={() => props.history.push(`gardens/${props.garden.id}/edit`)}>Edit</button>

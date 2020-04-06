@@ -9,20 +9,14 @@ const PlantList = props => {
   ]);
   const [option, setOption] = useState({ value: "" });
   const [text, setText] = useState("");
+  const [sunExpOption, setSunExpOption] = useState(0)
+  const [waterReqOption, setWaterReqOption] = useState(0)
   const [sunExposures, setSunExposures] = useState([]);
   const [waterRequirements, setWaterRequirements] = useState([]);
 
-  const setPlants = textValue => {
-    API.getSunExposureAndWaterRequirementType().then(plants => {
-      const filteredPlants = plants.filter(plant => {
-        return plant.name.toLowerCase().includes(textValue) === true;
-      });
-      setSearchPlants(filteredPlants);
-    });
-  };
 
   useEffect(() => {
-    setPlants("ldfgkjhdglfkjh");
+    // setPlants("ldfgkjhdglfkjh");
     API.getUserGardens(props.apiUser).then(info => {
       if (info.gardens.length === 0) {
         const stateToChange = { ...option };
@@ -56,16 +50,18 @@ const PlantList = props => {
   };
 
   const createRelationshipObj = plantObj => {
+    console.log(plantObj)
     const newPlantObj = {
       userId: parseInt(sessionStorage.getItem("userId")),
       name: plantObj.name,
       height: plantObj.height,
-      sunExposure: plantObj.sunExposure,
-      waterRequirements: plantObj.waterRequirements,
+      sunExposure: plantObj.sunExposureType.sunExposure,
+      waterRequirements: plantObj.waterRequirementType.waterRequirement,
       imageUrl: plantObj.imageUrl,
       hasBeenWatered: false,
       nickname: ""
     };
+    
 
     API.postPlantToPersonalPlant(newPlantObj)
       .then(resp => resp.json())
@@ -78,36 +74,28 @@ const PlantList = props => {
         window.alert(`Congratulations! You have added ${newPlantObj.name}`);
       });
   };
-  const handleTextFieldChange = e => {
-    const stateToChange = { ...text };
-    stateToChange[e.target.id] = e.target.value;
-    setText(stateToChange);
-    setPlants(e.target.value);
-  };
+  
+  
+  const setPlants = () => {
+    API.getSunExposureAndWaterRequirementType()
+    .then(plants => plants
+    .filter(plant => plant.name.toLowerCase().includes(text.toLowerCase()) || text === "")
+    .filter(plant => plant.sunExposureTypeId === sunExpOption || sunExpOption === 0)
+    .filter(plant => plant.waterRequirementTypeId === waterReqOption || waterReqOption === 0)
+    ).then((r) => setSearchPlants(!(waterReqOption === 0 && sunExpOption === 0 && text === "") ?  r : []))};
 
-  const handleSunExpChange = e => {
-    const stateToChange = { ...sunExposures };
-    stateToChange[e.target.id] = parseInt(e.target.value);
-    API.getSunExposureAndWaterRequirementType().then(plants => {
-      const filteredPlants = plants.filter(plant => {
-        return plant.sunExposureTypeId === stateToChange.sunExposureList;
-      });
-      setSearchPlants(filteredPlants);
-    });
-  };
+  const handleTextFieldChange = e => setText(e.target.value);
+  
+  useEffect(() => {
+    setPlants();
+  }, [text, sunExpOption, waterReqOption]);
 
-  const handleWaterReqChange = e => {
-    const stateToChange = { ...waterRequirements };
-    stateToChange[e.target.id] = parseInt(e.target.value);
-    API.getSunExposureAndWaterRequirementType().then(plants => {
-      const filteredPlants = plants.filter(plant => {
-        return (
-          plant.waterRequirementTypeId === stateToChange.waterRequirementList
-        );
-      });
-      setSearchPlants(filteredPlants);
-    });
-  };
+  const handleSunExpChange = e =>  setSunExpOption(parseInt(e.target.value));
+
+  const handleWaterReqChange = e =>  setWaterReqOption(parseInt(e.target.value));
+
+  
+
   return (
     <>
       <p className="contributePlantBtn">
@@ -143,7 +131,7 @@ const PlantList = props => {
         <input
           id="searchBar"
           type="text"
-          onKeyPress={handleTextFieldChange}
+          onChange={handleTextFieldChange}
         ></input>
         Search by Sun Exposure:
         <select
@@ -151,7 +139,7 @@ const PlantList = props => {
           id="sunExposureList"
           onChange={handleSunExpChange}
         >
-          <option></option>
+          <option value={0}></option>
           {sunExposures.map(sunExposureInfo => {
             return (
               <option key={sunExposureInfo.id} value={sunExposureInfo.id}>
@@ -166,7 +154,7 @@ const PlantList = props => {
           id="waterRequirementList"
           onChange={handleWaterReqChange}
         >
-          <option></option>
+          <option value={0}></option>
           {waterRequirements.map(waterRequirementInfo => {
             return (
               <option
@@ -179,11 +167,12 @@ const PlantList = props => {
           })}
         </select>
       </div>
-      {searchPlants.map(plant => (
+      {searchPlants.map((plant, i) => (
         <PlantSearch
           key={plant.id}
           name={plant.name}
           plantId={plant.id}
+          index={i}
           apiUser={props.apiUser}
           userId={plant.userId}
           selectGardens={selectGardens}

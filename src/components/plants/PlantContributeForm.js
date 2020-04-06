@@ -69,6 +69,7 @@ const PlantContributeForm = props => {
   return (
     <form className="specialForm">
       <fieldset className="specialFieldset">
+        <h1 className="formTitle">Contribute Plant</h1>
         <div className="formContent">
           <label htmlFor="name">Plant Name:</label> <span></span>
           <input

@@ -80,6 +80,11 @@ const API = {
             method: "DELETE"
         });
     }, 
+    deletePersonalPlant(personalPlantId) {
+        return fetch(baseUrl + "personalPlants/" + personalPlantId, {
+            method: "DELETE"
+        });
+    },
     getPlantToGardenObjs() {
         return fetch(baseUrl + "gardensAndPlants").then(resp => resp.json())
     }, 
@@ -95,6 +100,15 @@ const API = {
             body: JSON.stringify(plant)
         })
     }, 
+    updatePersonalPlant(personalPlant) {
+        return fetch(baseUrl + "personalPlants/" + personalPlant.id , {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(personalPlant)
+        })
+    },
     deletePlant(id) {
         return fetch(baseUrl + "plants/" + id, {
             method: "DELETE"
@@ -120,7 +134,28 @@ const API = {
     }, 
     getWaterRequirementType() {
         return fetch(baseUrl + "waterRequirementTypes").then(resp => resp.json())
-    }
+    }, 
+    updatePersonalPlant(plant) {
+        return fetch(baseUrl + "personalPlants/" + plant.id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(plant)
+        })
+    }, 
+    getRandomId() {
+        return fetch(baseUrl + "plants")
+          .then(result => result.json())
+          .then(plants => {
+            let i;
+            for(i = 0; i < 3; i++) {
+            const randomIndex = Math.floor(Math.random() * plants.length);
+            const randomPlant = plants[randomIndex];
+            return randomPlant.id;
+            }
+        });
+      }
 }
 
 export default API

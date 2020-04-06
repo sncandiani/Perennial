@@ -1,13 +1,30 @@
+@font-face {
+  font-family: 'MyWebFont'; 
+  src: url(../src/css/myfont.woff2) format('woff2'), 
+       url(../src/css/myfont.woff) format('woff')
+};
+
 body {
+  background-color:  #fffaf7;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #184b3b; 
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
+}
+#root {
+  font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
+  background-color:  #fffaf7;
+  color: #184b3b; 
+}
+#root a {
+  text-decoration: none;
+}
+
+html {
+  background-color:  #fffaf7;
 }

@@ -1,28 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import API from "../../modules/ApiManager";
 
 const PlantSearch = props => {
-  const openModal = () => {
-    document.getElementById("myModal").style.display = "block";
-  };
+  const openModal = () => document.getElementById(`modal--${props.index}`).style.display = "block";
 
-  const closeSpanModal = () => {
-    document.getElementById("myModal").style.display = "none";
-  };
 
-  
+  const closeSpanModal = () => document.getElementById(`modal--${props.index}`).style.display = "none";
+
+ 
   return (
     <div className="plantSearchResults">
       <h1>{props.name}</h1>
       <button id="myBtn" onClick={openModal}>
         More Information
       </button>
-      <div id="myModal" className="modal">
+      <div id={`modal--${props.index}`} className="modal">
         <div className="modal-content">
           <span onClick={closeSpanModal} className="close">
             &times;
           </span>
-          <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
+         <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
           <p>{props.plantObj.name}</p>
           <p>{props.plantObj.height}</p>
           <p>{props.plantObj.sunExposureType.sunExposure}</p>
