@@ -52,17 +52,24 @@ const GardenDetail = props => {
 
   return (
     <>
-      <div className="gardenDetailSect">
-        <h3>{garden.name}</h3>
-        <h3>{garden.dateCreated}</h3>
-        <h3>{garden.gardenLocation}</h3>
-        <button
+     <div className="plantAddOp">
+      <button
           className="searchPlantButton"
           type="button"
           onClick={() => props.history.push(`/searchplants`)}
         >
-          Search Plants
+          Add Plants
         </button>
+        </div>
+      <div className="gardenDetailSect">
+      <div className="side1PlantCard">
+        <img src={garden.imageUrl}></img>
+      </div>
+      <div className="side2PlantCard">
+        <h3>{garden.name}</h3>
+        <h3>{garden.dateCreated}</h3>
+        <h3>{garden.gardenLocation}</h3>
+        </div>
       </div>
       <div className="plantCardSect">
         {plants.length === 0 ? (

@@ -30,7 +30,7 @@
       "waterRequirementTypeId": 2,
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
       "id": 1
-    }, 
+    },
     {
       "userId": 1,
       "name": "rose",
@@ -39,7 +39,7 @@
       "waterRequirementTypeId": 2,
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
       "id": 2
-    }, 
+    },
     {
       "userId": 1,
       "name": "celosia",
@@ -48,7 +48,7 @@
       "waterRequirementTypeId": 2,
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
       "id": 3
-    }, 
+    },
     {
       "userId": 1,
       "name": "orchid",
@@ -61,40 +61,81 @@
   ],
   "gardens": [
     {
-      "userId": 1,
-      "name": "Sofias first rose garden",
-      "dateCreated": "2020-03-27",
-      "gardenLocation": "Backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Foaklandliving.files.wordpress.com%2F2008%2F05%2Fsecluded-space-in-rose-garden.jpg&f=1&nofb=1",
-      "id": 1
-    },
-    {
       "id": 2,
       "userId": 2,
       "name": "Fun garden",
       "dateCreated": "2020-02-02",
       "gardenLocation": "Backyard",
       "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Celosia_cristataII.JPG/1200px-Celosia_cristataII.JPG"
+    },
+    {
+      "userId": 1,
+      "name": "Hydrangea Garden",
+      "dateCreated": "2020-02-02",
+      "gardenLocation": "Front porch",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.exploregeorgia.org%2Fsites%2Fdefault%2Ffiles%2Flegacy_images%2FHydrangeas-at-Gibbs-Gardens-June-1-web.jpg&f=1&nofb=1",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "name": "Celosia Garden",
+      "dateCreated": "0003-03-01",
+      "gardenLocation": "backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fall-americaselections.org%2Fwp-content%2Fuploads%2F2016%2F07%2FCelosia-Asian-Garden-PRIMARY.jpg&f=1&nofb=1"
     }
   ],
   "gardensAndPlants": [
     {
-      "gardenId": 1,
-      "personalPlantId": 1,
+      "gardenId": 4,
+      "personalPlantId": 2,
       "id": 1
     }
   ],
   "personalPlants": [
     {
       "userId": 1,
+      "name": "rose",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "my first nickname",
+      "id": 1
+    },
+    {
+      "userId": 1,
       "name": "hydrangea",
       "height": "6",
       "sunExposure": "Full Sun",
       "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarianstclair.files.wordpress.com%2F2013%2F07%2Fdsc_83251.jpg&f=1&nofb=1",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
       "hasBeenWatered": false,
-      "nickname": "my first nickname",
-      "id": 1
+      "nickname": "",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "name": "rose",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "hydrangea",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 5
     }
   ],
   "sunExposureTypes": [

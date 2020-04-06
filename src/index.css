@@ -11,6 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #184b3b; 
+  
 }
 
 code {
@@ -18,13 +19,9 @@ code {
 }
 #root {
   font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
-  background-color:  #fffaf7;
   color: #184b3b; 
 }
 #root a {
   text-decoration: none;
 }
 
-html {
-  background-color:  #fffaf7;
-}

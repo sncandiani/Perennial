@@ -1,22 +1,26 @@
-
-
  .navList {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     list-style: none;
     text-decoration: none;
     padding-bottom: 5px;
-    color: #fffaf7;
     margin: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
 } 
+
+.nav {
+    z-index: 1;
+    width: 100%;
+}
 .navLinks {
     text-decoration: none;
     transition: .6s;
     color: #184b3b;
-    font-size: 19.5px;
+    font-size: 19px;
+    font-family: 'MyWebFont', "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
+
 }
 
 .navLinks:hover {
@@ -24,4 +28,26 @@
     transition: .6s;
     color: #f08f34;
 }
+.icon {
+    width: 20px;
+    height: 30px;
+}
+.primaryNavLinks {
+    display: flex;
+}
+.secondaryNavLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondaryNavLinks li {
+    margin: 0 29px;
+}
+
+.primaryNavLinks .navLinks {
+    margin: 0 3px;
+    font-size: 23px;
+}
+
+
 

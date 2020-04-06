@@ -54,7 +54,7 @@ const AppViews = (props) => {
 
         return (
             <>
-            {firebaseUser && apiUser != null ? <NavBar /> : null}
+            {firebaseUser && apiUser != null ? <NavBar {...props}/> : null}
             
             <React.Fragment>
 

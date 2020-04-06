@@ -19,11 +19,17 @@ const PlantSearch = props => {
           <span onClick={closeSpanModal} className="close">
             &times;
           </span>
-         <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
-          <p>{props.plantObj.name}</p>
-          <p>{props.plantObj.height}</p>
-          <p>{props.plantObj.sunExposureType.sunExposure}</p>
-          <p>{props.plantObj.waterRequirementType.waterRequirement}</p>
+          <div className="modal-information">
+          <div className="side1PlantCard">
+         <img src={props.plantObj.imageUrl}></img>
+         </div>
+         <div className="side2PlantCard">
+          <p>Name: {props.plantObj.name}</p>
+          <p>Height: {props.plantObj.height}</p>
+          <p>Sun Exposure: {props.plantObj.sunExposureType.sunExposure}</p>
+          <p>Water Requirements: {props.plantObj.waterRequirementType.waterRequirement}</p>
+          </div>
+          </div>
         </div>
       </div>
       <button

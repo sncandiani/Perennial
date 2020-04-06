@@ -98,7 +98,7 @@ const PlantList = props => {
 
   return (
     <>
-      <p className="contributePlantBtn">
+    <p className="contributePlantBtn">
         <button
           type="button"
           onClick={() => props.history.push(`/contributeplant`)}
@@ -106,6 +106,8 @@ const PlantList = props => {
           Contribute plant
         </button>
       </p>
+    <div className="searchPage">
+  
       <p className="selectGarden">
         <label>Select Garden: </label>
         <select className="select" id="myGardenList" onChange={handleChange}>
@@ -182,6 +184,7 @@ const PlantList = props => {
           {...props}
         />
       ))}
+    </div>
     </>
   );
 };

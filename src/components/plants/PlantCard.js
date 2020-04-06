@@ -23,12 +23,17 @@ const PlantCard = props => {
     });
   };
 
+  const colorsArray = ["#f08f34", "#97c582", "#f1e2e3"]
 
   return (
-    <div className="plantCard">
-      <h1>{props.name}</h1>
-     {props.personalPlantObj.nickname != "" && <h2>{props.personalPlantObj.nickname}</h2>} 
+    <div className="plantCard"  style={{flexDirection:`${props.index%2 === 0 ? "row-reverse" : "row"}`}}>
+      <div className="side1PlantCard">
       <img src={props.imageUrl}></img>
+      </div>
+      <div className="side2PlantCard">
+      <h1 style={{ color: `${colorsArray[(props.index)%3]}`}}>{props.name}</h1>
+     {props.personalPlantObj.nickname != "" && <h2>{props.personalPlantObj.nickname}</h2>} 
+     <div className="btnWrapper">
       <button type="button" onClick={deletePlantToGarden}>
         Delete
       </button>
@@ -38,9 +43,8 @@ const PlantCard = props => {
       }}>
         Customize
       </button>
-
-      <button type="button">Notes</button>
-      
+      </div>
+      </div>
     </div>
   );
 };
