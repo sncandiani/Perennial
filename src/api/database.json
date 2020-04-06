@@ -23,40 +23,67 @@
   ],
   "plants": [
     {
+      "id": 1,
       "userId": 1,
-      "name": "hydrangea",
+      "name": "Hydrangea",
       "height": "6",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
-      "id": 1
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Rose",
+      "height": "6",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "name": "Celosia",
+      "height": "6",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "name": "Orchid",
+      "height": "6",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruce.com%2Fthmb%2FiMty_rjj2rHMceUhclubjmLw7NI%3D%2F1280x854%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Funbloomed-orchid-474103343-resized-56a3008e3df78cf7727b78be.jpg&f=1&nofb=1"
     },
     {
       "userId": 1,
-      "name": "rose",
-      "height": "6",
+      "name": "Lily",
+      "height": "7 in",
       "sunExposureTypeId": 1,
-      "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
-      "id": 2
+      "waterRequirementTypeId": 1,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa7%2FAlstroemeria_aurantiaca.jpg&f=1&nofb=1",
+      "id": 5
     },
     {
       "userId": 1,
-      "name": "celosia",
-      "height": "6",
+      "name": "Sweet Potato",
+      "height": "4 in",
       "sunExposureTypeId": 1,
-      "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
-      "id": 3
+      "waterRequirementTypeId": 1,
+      "imageUrl": "ee",
+      "id": 6
     },
     {
-      "userId": 1,
-      "name": "orchid",
-      "height": "6",
+      "userId": 2,
+      "name": "Trinitys plant",
+      "height": "3",
       "sunExposureTypeId": 1,
-      "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruce.com%2Fthmb%2FiMty_rjj2rHMceUhclubjmLw7NI%3D%2F1280x854%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Funbloomed-orchid-474103343-resized-56a3008e3df78cf7727b78be.jpg&f=1&nofb=1",
-      "id": 4
+      "waterRequirementTypeId": 1,
+      "imageUrl": "url",
+      "id": 7
     }
   ],
   "gardens": [
@@ -70,40 +97,44 @@
     },
     {
       "userId": 1,
-      "name": "Hydrangea Garden",
-      "dateCreated": "2020-02-02",
-      "gardenLocation": "Front porch",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.exploregeorgia.org%2Fsites%2Fdefault%2Ffiles%2Flegacy_images%2FHydrangeas-at-Gibbs-Gardens-June-1-web.jpg&f=1&nofb=1",
-      "id": 4
+      "name": "Celosia Garden",
+      "dateCreated": "2020-03-03",
+      "gardenLocation": "Backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fall-americaselections.org%2Fwp-content%2Fuploads%2F2016%2F07%2FCelosia-Asian-Garden-PRIMARY.jpg&f=1&nofb=1",
+      "id": 3
     },
     {
-      "id": 5,
       "userId": 1,
-      "name": "Celosia Garden",
-      "dateCreated": "0003-03-01",
-      "gardenLocation": "backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fall-americaselections.org%2Fwp-content%2Fuploads%2F2016%2F07%2FCelosia-Asian-Garden-PRIMARY.jpg&f=1&nofb=1"
+      "name": "Rose Garden",
+      "dateCreated": "2020-02-02",
+      "gardenLocation": "Backyard",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-J2fvp4mGG3g%2FUA5jX2B8PkI%2FAAAAAAAABIM%2F4fj--0BiiKo%2Fs1600%2FDay%252B3%252B-%252Brose%252Bgarden.jpg&f=1&nofb=1",
+      "id": 4
     }
   ],
   "gardensAndPlants": [
     {
-      "gardenId": 4,
-      "personalPlantId": 2,
+      "gardenId": 3,
+      "personalPlantId": 7,
       "id": 1
+    },
+    {
+      "gardenId": 3,
+      "personalPlantId": 8,
+      "id": 2
+    },
+    {
+      "gardenId": 3,
+      "personalPlantId": 9,
+      "id": 3
+    },
+    {
+      "gardenId": 4,
+      "personalPlantId": 10,
+      "id": 4
     }
   ],
   "personalPlants": [
-    {
-      "userId": 1,
-      "name": "rose",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "my first nickname",
-      "id": 1
-    },
     {
       "userId": 1,
       "name": "hydrangea",
@@ -112,7 +143,7 @@
       "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
       "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
       "hasBeenWatered": false,
-      "nickname": "",
+      "nickname": "My first nickname!",
       "id": 2
     },
     {
@@ -136,6 +167,61 @@
       "hasBeenWatered": false,
       "nickname": "",
       "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "celosia",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "name": "Celosia",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "Dr.Seuss",
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "name": "Rose",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "Alice in Wonderland",
+      "id": 8
+    },
+    {
+      "userId": 1,
+      "name": "Celosia",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "Crazy grandma",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "name": "Rose",
+      "height": "6",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "",
+      "id": 10
     }
   ],
   "sunExposureTypes": [

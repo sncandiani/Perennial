@@ -66,14 +66,16 @@ const GardenDetail = props => {
         <img src={garden.imageUrl}></img>
       </div>
       <div className="side2PlantCard">
-        <h3>{garden.name}</h3>
-        <h3>{garden.dateCreated}</h3>
-        <h3>{garden.gardenLocation}</h3>
+        <h3 style={{border: "none"}}className="largeTxt">{garden.name}</h3>
+        <h4>{garden.dateCreated}</h4>
+        <h4>{garden.gardenLocation}</h4>
         </div>
       </div>
       <div className="plantCardSect">
         {plants.length === 0 ? (
+          <div className="emptyPlantCard">
           <h1>You have no plants</h1>
+          </div>
         ) : (
           plants.map((plant, i) => (
             <PlantCard

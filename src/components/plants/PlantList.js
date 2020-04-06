@@ -98,17 +98,17 @@ const PlantList = props => {
 
   return (
     <>
-    <p className="contributePlantBtn">
+    <div className="contributePlantBtn">
         <button
           type="button"
           onClick={() => props.history.push(`/contributeplant`)}
         >
           Contribute plant
         </button>
-      </p>
+      </div>
     <div className="searchPage">
-  
-      <p className="selectGarden">
+    <div className="searchFields">
+      <div className="selectGarden">
         <label>Select Garden: </label>
         <select className="select" id="myGardenList" onChange={handleChange}>
           {selectGardens[0].name === "No Gardens Available"
@@ -127,8 +127,7 @@ const PlantList = props => {
                 );
               })}
         </select>
-      </p>
-      <div className="searchOptions">
+      </div>
         Search by name:
         <input
           id="searchBar"
@@ -168,7 +167,10 @@ const PlantList = props => {
             );
           })}
         </select>
+    
       </div>
+          <div className="searchResults">
+            <h3 className="largeTxt">Search Results</h3>
       {searchPlants.map((plant, i) => (
         <PlantSearch
           key={plant.id}
@@ -184,6 +186,7 @@ const PlantList = props => {
           {...props}
         />
       ))}
+      </div>
     </div>
     </>
   );

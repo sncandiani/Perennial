@@ -7,22 +7,15 @@ const NavBar = props => {
   const [backgroundColor, setBackgroundColor] = useState({
     backgroundColor: "transparent"
   });
-  const [color, setColor] = useState({
-    color: "white"
-  })
   
   const currentLocation = props.location.pathname;
 useEffect(() => {
   setBackgroundColor(
          currentLocation === "/home"
            ? { backgroundColor: "transparent" }
-           : { backgroundColor: "#fffaf7" }
-       );
-setColor(
-  currentLocation === "/home"
-           ? { color: "#white" }
-           : { color: "#184b3b" }
-)
+           : { backgroundColor: "#F4DFC6" }
+       ) 
+    
 }, [])
 
   return (
@@ -30,14 +23,8 @@ setColor(
       <ul style={backgroundColor} className="navList">
         <div className="primaryNavLinks">
           <li>
-            <img
-              className="icon"
-              src={require("../../css/white-leaf-icon.svg")}
-            ></img>
-          </li>
-          <li>
             <a className="navLinks"
-            style={color}
+            
              href="http://localhost:3000/home">
               Perennial
             </a>
@@ -47,7 +34,7 @@ setColor(
           <li>
             <a
               className="navLinks"
-              style={color}
+              
               href="http://localhost:3000/gardens"
             >
               Gardens
@@ -56,7 +43,7 @@ setColor(
           <li>
             <a
               className="navLinks"
-              style={color}
+              
               href="http://localhost:3000/searchplants"
             >
               Search
@@ -65,7 +52,7 @@ setColor(
           <li>
             <a
               className="navLinks"
-              style={color}
+              
               href="http://localhost:3000/"
               onClick={() => {
                 firebase.auth().signOut();

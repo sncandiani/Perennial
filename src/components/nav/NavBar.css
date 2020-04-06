@@ -5,8 +5,8 @@
     text-decoration: none;
     padding-bottom: 5px;
     margin: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
 } 
 
@@ -17,9 +17,9 @@
 .navLinks {
     text-decoration: none;
     transition: .6s;
-    color: #184b3b;
+    color: white;
     font-size: 19px;
-    font-family: 'MyWebFont', "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
+    font-family: 'Spectral', "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
 
 }
 

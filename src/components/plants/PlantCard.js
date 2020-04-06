@@ -23,7 +23,7 @@ const PlantCard = props => {
     });
   };
 
-  const colorsArray = ["#f08f34", "#97c582", "#f1e2e3"]
+  const colorsArray = ["#f08f34", "#97c582", "#bd9f72"]
 
   return (
     <div className="plantCard"  style={{flexDirection:`${props.index%2 === 0 ? "row-reverse" : "row"}`}}>
@@ -32,16 +32,16 @@ const PlantCard = props => {
       </div>
       <div className="side2PlantCard">
       <h1 style={{ color: `${colorsArray[(props.index)%3]}`}}>{props.name}</h1>
-     {props.personalPlantObj.nickname != "" && <h2>{props.personalPlantObj.nickname}</h2>} 
+     {props.personalPlantObj.nickname != "" && <h4>{props.personalPlantObj.nickname}</h4>} 
      <div className="btnWrapper">
-      <button type="button" onClick={deletePlantToGarden}>
-        Delete
-      </button>
-      <button type="button" onClick={() => {
+     <button type="button" onClick={() => {
           props.openModal()
           props.setEditPlant(props.personalPlantObj)
       }}>
         Customize
+      </button>
+      <button type="button" onClick={deletePlantToGarden}>
+        Delete
       </button>
       </div>
       </div>

@@ -10,11 +10,11 @@
 body {
     font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
     color: #184b3b; 
-    background-color:  #fffaf7;
+    background-color:  "#F4DFC6";
 }
 button {
     background-color: #184b3b;
-    color: #fffaf7;
+    color: white;
     font-family: 'MyWebFont';
     border-radius: 5px  !important;
     transition: .6s;
@@ -24,12 +24,17 @@ button {
 fieldset {
     border: none;
 }
-
+.largeTxt {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    border-bottom: 2.1px solid #184b3b
+}
 input {
     border-top: none;
     border-left: none;
     border-right: none;
-    background-color: #fffaf7;
+    background-color: white;
     text-rendering: auto;
 }
 
@@ -45,7 +50,7 @@ h1 {
     justify-content: center;
     align-items: center;
    height: 100vh;
-   background-color: #fffaf7;
+   background-color: #F4DFC6;
   
 }
 
@@ -54,9 +59,15 @@ h1 {
     align-items: center;
     justify-content: center;
     border: 1.5px solid #f08f34;
-    padding: 75px;
+    padding: 30px;
     background-color: white;
     border-radius: 13px;
+}
+
+
+.specialFieldset .submitButton {
+  width: 300px;
+  margin-left: 10px;
 }
 
 .formContent {
@@ -101,7 +112,7 @@ img {
 
 .loadingPage {
     display: flex;
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
     color: #184b3b;
     justify-content: center;
     align-content: center;
@@ -113,7 +124,7 @@ img {
 /* LOGIN SECTION */
 .loginSect {
     display: flex;
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
     justify-content: center;
     align-content: center;
     font-size: 50px;
@@ -130,7 +141,7 @@ img {
 }
 
 .firebaseui-idp-text {
-    color: #fffaf7 !important;
+    color: white !important;
 }
 
 .firebaseui-id-idp-button:hover {
@@ -144,6 +155,7 @@ img {
 
 
 .loginName {
+    font-size: 50px;
     text-decoration: none;
     color: #184b3b;
     transition: 1s;
@@ -165,9 +177,10 @@ img {
     color: #184b3b;
 }
 .mdl-button--primary.mdl-button--primary:hover {
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
 }
 .firebaseui-title {
+    font-size: 25px;
     display: flex;
     justify-content: center;
     font-family: 'MyWebFont';
@@ -197,12 +210,12 @@ img {
 .mdl-button--raised.mdl-button--colored {
     font-family: 'MyWebFont';
     background: #184b3b;
-    color: #fffaf7;
+    color: white;
     transition: .6s;
 }
 .mdl-button--raised.mdl-button--colored:hover {
     background: #97c582;
-    color: #fffaf7;
+    color: white;
     transition: .6s;
 }
 .firebaseui-link {
@@ -242,7 +255,7 @@ img {
     display: flex;
     flex-direction: row;
     padding: 55px 0;
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
    
 }
 .gardenHeaders {
@@ -269,11 +282,16 @@ img {
 }
 
 .gardenDashboard {
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
     grid-gap: 50px;
     height: calc(100vh - 54px);
 }
+.gardenDashboard  .defaultGardenDashboardVal{
+    display: flex;
+    justify-content: center;
+    padding-top: 285px;
 
+}
 .gardenDashboard .side2PlantCard {
     background-color: white;
     border-radius: 5px;
@@ -282,9 +300,11 @@ img {
     padding: 5px;
 }
 
+
 .gardenAddOpt {
 display: flex;
 justify-content: center;
+background-color: #F4DFC6;
 }
 
 
@@ -320,33 +340,57 @@ justify-content: center;
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-
+  
   .contributePlantBtn {
       display: flex;
       justify-content: center;
+      background-color: #F4DFC6;
   }
-  
-  .searchOptions {
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: row;
-
+  .searchResults h3 {
+    display: flex;
+    justify-content: center;
   }
-  .plantSearchResults {
+  .searchResults {
+      border-radius: 5px;
       background-color: white;
+      padding: 20px;
+      width: 500px;
+      height: 600px;
       margin: 10px;
+      overflow-y: auto;
   }
 
-  .selectGarden {
+  .plantSearchResult .plantSearchBtns {
       display: flex;
-      justify-content: center;
-      padding-bottom: 25px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-size: 10px;
+      width: 50px;
+      height: 50px;
   }
+ 
+  .plantSearchResult {
+      padding-bottom: 5px;
+  }
+ 
+.searchplantBtnSect {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
 
   .searchPage {
-      background-color: #fffaf7;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #F4DFC6;
       min-height: calc(100vh - 54px);
   }
+  .searchFields {
+      display: flex;
+      flex-direction: column;
+  }
+
   /* MODAL CONTENT FOR SEARCH */
   .modal-content {
     background-color: #fefefe;
@@ -382,9 +426,16 @@ justify-content: center;
     text-decoration: none;
     cursor: pointer;
   }
+  .side2PlantCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      font-size: 15px;
+  }
 
 /* PLANT CARD */
-.side2PlantCard {
+.plantCard .side2PlantCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -393,6 +444,7 @@ justify-content: center;
     width: 550px;
     height: 350px;
     padding: 5px;
+    border-radius: 5px;
 }
 .btnWrapper {
     display: flex;
@@ -401,15 +453,20 @@ justify-content: center;
 .plantAddOp {
     display: flex;
     justify-content: center;
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
 }
-
+.emptyPlantCard {
+    display: flex;
+    justify-content: center;
+    background-color: #F4DFC6;
+    height: 30vh;
+}
 .plantCard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 65px 0;
-    background-color: #fffaf7
+    background-color: #F4DFC6
 }
 .plantCard img {
     width: 550px;
@@ -422,7 +479,7 @@ justify-content: center;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 55px 0;
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
 }
 
 .gardenDetailSect img {
@@ -435,3 +492,4 @@ justify-content: center;
     background-color: #fefefe;
     height: fit-content;
 }
+ 
