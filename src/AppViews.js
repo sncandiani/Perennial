@@ -62,7 +62,7 @@ const AppViews = (props) => {
                     exact
                     path="/"
                     render={props => 
-                     <Login />
+                        firebaseUser && apiUser != null ? <Redirect from='/' to="/home" /> : <Login />
                     }
                 />
               

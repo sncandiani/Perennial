@@ -1,227 +1,204 @@
 {
   "users": [
     {
-      "uid": "I884LYHrJRXrYbXKXze9XxS5Bnp1",
-      "name": "Sofia Candiani",
+      "uid": "nwM3y2asUgSGGTy3subJCbWTSMc2",
+      "name": "Sofia C",
       "id": 1
     },
     {
-      "uid": "ukCAOE4QA7Rwh2becWibGqsFX7C2",
-      "name": "trinity",
+      "uid": "MAzU7ERKZwN6gF4X08qWXY5oSDc2",
+      "name": "Trinity T",
       "id": 2
-    },
-    {
-      "uid": "k6hdQjhaYeTgl4LjksiJTB2tJJp1",
-      "name": "Michael Clark",
-      "id": 3
-    },
-    {
-      "uid": "Icyy7zXtNLUykWLWpfKAzjlsRcd2",
-      "name": "Sofia C",
-      "id": 4
     }
   ],
   "plants": [
     {
       "id": 1,
       "userId": 1,
-      "name": "Hydrangea",
-      "height": "6",
+      "name": "Orange Daylily",
+      "height": "24-36 in",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1"
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fil6.picdn.net%2Fshutterstock%2Fvideos%2F3603602%2Fthumb%2F1.jpg&f=1&nofb=1"
     },
     {
-      "id": 2,
       "userId": 1,
-      "name": "Rose",
-      "height": "6",
+      "name": "Hot Lemon Pepper",
+      "height": "24-36 in.",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1"
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg0.etsystatic.com%2F050%2F0%2F7824311%2Fil_570xN.670554410_k2zz.jpg&f=1&nofb=1",
+      "id": 3
     },
     {
-      "id": 3,
       "userId": 1,
-      "name": "Celosia",
-      "height": "6",
+      "name": "Ornamental Pepper",
+      "height": "18-24 in.",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1"
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pepperscale.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fcan-you-eat-ornamental-peppers-e1456721517690.jpg&f=1&nofb=1",
+      "id": 4
     },
     {
-      "id": 4,
+      "id": 5,
       "userId": 1,
-      "name": "Orchid",
-      "height": "6",
+      "name": "Cowhorn Pepper",
+      "height": "36-48 in.",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 2,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruce.com%2Fthmb%2FiMty_rjj2rHMceUhclubjmLw7NI%3D%2F1280x854%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2Funbloomed-orchid-474103343-resized-56a3008e3df78cf7727b78be.jpg&f=1&nofb=1"
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.healthbenefitstimes.com%2F9%2Fuploads%2F2013%2F06%2FCajun-Belle-Pepper.jpg&f=1&nofb=1"
     },
     {
       "userId": 1,
-      "name": "Lily",
-      "height": "7 in",
+      "name": "Banana Pepper",
+      "height": "18-36in.",
       "sunExposureTypeId": 1,
-      "waterRequirementTypeId": 1,
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fa7%2FAlstroemeria_aurantiaca.jpg&f=1&nofb=1",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "name": "Sweet Potato",
-      "height": "4 in",
-      "sunExposureTypeId": 1,
-      "waterRequirementTypeId": 1,
-      "imageUrl": "ee",
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fbonnieplants.com%2Fwp-content%2Fuploads%2Fhot-banana-pepper.jpg%3Ffit%3D1024%252C1118%26ssl%3D1&f=1&nofb=1",
       "id": 6
     },
     {
       "userId": 2,
-      "name": "Trinitys plant",
-      "height": "3",
+      "name": "Cayenne Pepper",
+      "height": "12-24 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-WazD1YSNz14%2FUYv3MwzDqII%2FAAAAAAAAADs%2FlwGEO2i8V6Q%2Fs1600%2Funtitled.png&f=1&nofb=1",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "name": "Bell Pepper",
+      "height": "24-36 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.garden.eco%2Fwp-content%2Fuploads%2F2018%2F03%2Fhow-many-bell-peppers-per-plant.jpg&f=1&nofb=1",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "name": "Sweet Pepper",
+      "height": "24-36 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fedge.bonnieplants.com%2Fwww%2Fuploads%2F20180920004013%2Fpimiento-pepper.jpg&f=1&nofb=1",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "name": "Mophead Endless Summer Hydrangea",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-jmzfi5zcr2/product_images/uploaded_images/mophead-hydrangea-cropped-compressor.jpg",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "name": "Lacecap Hydrangea",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_BDpMTts_yhg%2FTDzvY5-XLyI%2FAAAAAAAAHbs%2FAGeUROAlpOo%2Fs1600%2FIMG_1071.JPG&f=1&nofb=1",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "Rosemary",
+      "height": "4-6 ft.",
       "sunExposureTypeId": 1,
       "waterRequirementTypeId": 1,
-      "imageUrl": "url",
-      "id": 7
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-7u3yWvYjpcw%2FUE7Hn7Tng-I%2FAAAAAAAAB10%2FtWMBIl_EpR0%2Fs1600%2Frosemary-closeup.jpg&f=1&nofb=1"
+    },
+    {
+      "userId": 2,
+      "name": "Spanish Thyme",
+      "height": "12-18 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 1,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1b%2FLeaf_-pani_koorkka.JPG&f=1&nofb=1",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "name": "Pineapple Sage",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.motherearthliving.com%2F~%2Fmedia%2FImages%2FMEL%2FEditorial%2FArticles%2FMagazine%2520Articles%2F1993%2F06-01%2FHerb%2520to%2520Know%2520Pineapple%2520Sage%2Fpineapple-sage-salvia-elega.jpg&f=1&nofb=1",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "name": "Lemon Balm",
+      "height": "12-18 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.ebayimg.com%2Fimages%2Fi%2F291411609126-0-1%2Fs-l1000.jpg&f=1&nofb=1",
+      "id": 15
     }
   ],
   "gardens": [
     {
+      "userId": 1,
+      "name": "Herbs",
+      "dateCreated": "2020-01-01",
+      "gardenLocation": "Kitchen ",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre-tend.com%2Fwp-content%2Fuploads%2F2017%2F10%2FGreen-kitchen-growing-herbs-indoors-herb-garden-window-herb-garden-kitchen-herb-garden-growing-herbs-herb-planter-indoor-1024x1024.jpg&f=1&nofb=1",
+      "id": 1
+    },
+    {
       "id": 2,
       "userId": 2,
-      "name": "Fun garden",
-      "dateCreated": "2020-02-02",
-      "gardenLocation": "Backyard",
-      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Celosia_cristataII.JPG/1200px-Celosia_cristataII.JPG"
+      "name": "Herbs",
+      "dateCreated": "2018-05-09",
+      "gardenLocation": "Patio",
+      "imageUrl": "https://homebnc.com/homeimg/2016/06/06-balcony-gardens-culinary-creations-homebnc.jpg"
     },
     {
-      "userId": 1,
-      "name": "Celosia Garden",
-      "dateCreated": "2020-03-03",
+      "userId": 2,
+      "name": "Flower garden",
+      "dateCreated": "2020-06-07",
       "gardenLocation": "Backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fall-americaselections.org%2Fwp-content%2Fuploads%2F2016%2F07%2FCelosia-Asian-Garden-PRIMARY.jpg&f=1&nofb=1",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fflowergardengirl.co.uk%2Fwp-content%2Fuploads%2F2013%2F12%2Fmodern-minimalist-garden-design-low-maintenance-high-impact-garden-design-raised-white-wall-beds-grey-decking-east-grass-lawn-turf-sunken-garden-with-fire-and-chimney-flat-trees-balham-wandsworth-london-2.jpg&f=1&nofb=1",
       "id": 3
-    },
-    {
-      "userId": 1,
-      "name": "Rose Garden",
-      "dateCreated": "2020-02-02",
-      "gardenLocation": "Backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-J2fvp4mGG3g%2FUA5jX2B8PkI%2FAAAAAAAABIM%2F4fj--0BiiKo%2Fs1600%2FDay%252B3%252B-%252Brose%252Bgarden.jpg&f=1&nofb=1",
-      "id": 4
     }
   ],
   "gardensAndPlants": [
     {
-      "gardenId": 3,
-      "personalPlantId": 7,
+      "gardenId": 1,
+      "personalPlantId": 1,
       "id": 1
     },
     {
-      "gardenId": 3,
-      "personalPlantId": 8,
+      "gardenId": 1,
+      "personalPlantId": 2,
       "id": 2
-    },
-    {
-      "gardenId": 3,
-      "personalPlantId": 9,
-      "id": 3
-    },
-    {
-      "gardenId": 4,
-      "personalPlantId": 10,
-      "id": 4
     }
   ],
   "personalPlants": [
     {
       "userId": 1,
-      "name": "hydrangea",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
+      "name": "Spanish Thyme",
+      "height": "12-18 in.",
+      "sunExposure": "Sun to Partial Shade",
+      "waterRequirements": "Drought Tolerant",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1b%2FLeaf_-pani_koorkka.JPG&f=1&nofb=1",
       "hasBeenWatered": false,
-      "nickname": "My first nickname!",
+      "nickname": "",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "name": "Rosemary",
+      "height": "4-6 ft.",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Drought Tolerant",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-7u3yWvYjpcw%2FUE7Hn7Tng-I%2FAAAAAAAAB10%2FtWMBIl_EpR0%2Fs1600%2Frosemary-closeup.jpg&f=1&nofb=1",
+      "hasBeenWatered": false,
+      "nickname": "",
       "id": 2
-    },
-    {
-      "userId": 1,
-      "name": "rose",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 3
-    },
-    {
-      "userId": 1,
-      "name": "hydrangea",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-PB2gvtBiFpc%2FT7ubY1_6aiI%2FAAAAAAAAAyA%2FA4FGeyVS3RM%2Fs1600%2FHydrangea%252Bblossom-3899.jpg&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "name": "celosia",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "name": "Celosia",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "Dr.Seuss",
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "name": "Rose",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "Alice in Wonderland",
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "name": "Celosia",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_uUZ4C290GjI%2FTP_Tx2XbckI%2FAAAAAAAAATs%2FsaQmHgh2xDk%2Fs1600%2FRed_Cockscomb_flowers.JPG&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "Crazy grandma",
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "name": "Rose",
-      "height": "6",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.jacksonandperkins.com%2Fimages%2Fxxl%2Fv2203.jpg&f=1&nofb=1",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 10
     }
   ],
   "sunExposureTypes": [

@@ -24,7 +24,7 @@ const GardenEditForm = (props) => {
         }
         API.updateGarden(editedGarden)
         .then(() => {
-            props.history.push("/")
+            props.history.push("/gardens")
         })
     }
 

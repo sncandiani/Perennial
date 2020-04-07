@@ -11,7 +11,7 @@ const NavBar = props => {
   const currentLocation = props.location.pathname;
 useEffect(() => {
   setBackgroundColor(
-         currentLocation === "/home"
+         currentLocation === "/home" || currentLocation === "/"
            ? { backgroundColor: "transparent" }
            : { backgroundColor: "#F4DFC6" }
        ) 

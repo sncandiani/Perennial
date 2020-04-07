@@ -17,7 +17,7 @@
 .navLinks {
     text-decoration: none;
     transition: .6s;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 19px;
     font-family: 'Spectral', "Helvetica Neue", Helvetica, "Roboto", Arial, sans-serif;
 
@@ -26,7 +26,7 @@
 .navLinks:hover {
     text-decoration: none;
     transition: .6s;
-    color: #f08f34;
+    color: #FFAA5A;
 }
 .icon {
     width: 20px;

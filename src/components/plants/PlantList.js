@@ -109,7 +109,7 @@ const PlantList = props => {
     <div className="searchPage">
     <div className="searchFields">
       <div className="selectGarden">
-        <label>Select Garden: </label>
+        Select Garden: 
         <select className="select" id="myGardenList" onChange={handleChange}>
           {selectGardens[0].name === "No Gardens Available"
             ? selectGardens.map(garden => {

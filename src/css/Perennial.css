@@ -12,6 +12,15 @@ body {
     color: #184b3b; 
     background-color:  "#F4DFC6";
 }
+label {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
+}
+#text {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
+}
+select {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif !important;
+}
 button {
     background-color: #184b3b;
     color: white;
@@ -28,7 +37,6 @@ fieldset {
     display: flex;
     justify-content: center;
     font-size: 40px;
-    border-bottom: 2.1px solid #184b3b
 }
 input {
     border-top: none;
@@ -36,6 +44,8 @@ input {
     border-right: none;
     background-color: white;
     text-rendering: auto;
+    font-family: 'spectral',  Arial, Helvetica, sans-serif !important;
+
 }
 
 button:hover {
@@ -58,7 +68,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1.5px solid #f08f34;
+    border: 1.5px solid #FFAA5A;
     padding: 30px;
     background-color: white;
     border-radius: 13px;
@@ -66,11 +76,14 @@ h1 {
 
 
 .specialFieldset .submitButton {
-  width: 300px;
-  margin-left: 10px;
+  width: 150px;
+ margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .formContent {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
     padding-bottom: 25px;
     font-size: 20px;
 }
@@ -162,7 +175,7 @@ img {
 }
 
 .loginName:hover {
-   color: #f08f34;
+   color: #FFAA5A;
    transition: 1s;
 }
 .action {
@@ -391,12 +404,16 @@ background-color: #F4DFC6;
       flex-direction: column;
   }
 
+  .searchResults h3 {
+      border-bottom: 1.5px solid #184b3b;
+  }
+
   /* MODAL CONTENT FOR SEARCH */
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 3px solid #f08f34;
+    border: 3px solid #FFAA5A;
     border-radius: 10px;
     width: 85%;
   }
@@ -478,7 +495,7 @@ background-color: #F4DFC6;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    padding: 55px 0;
+    padding: 130px 0;
     background-color: #F4DFC6;
 }
 
