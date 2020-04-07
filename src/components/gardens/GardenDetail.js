@@ -67,8 +67,8 @@ const GardenDetail = props => {
       </div>
       <div className="side2PlantCard">
         <h3 style={{border: "none"}}className="largeTxt">{garden.name}</h3>
-        <h4>{garden.dateCreated}</h4>
-        <h4>{garden.gardenLocation}</h4>
+        <h5>{garden.dateCreated}</h5>
+        <h5>{garden.gardenLocation}</h5>
         </div>
       </div>
       <div className="plantCardSect">
