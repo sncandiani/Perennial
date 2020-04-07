@@ -1,34 +1,70 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./NavBar.css";
 import firebase from "firebase/app";
-import { Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 const NavBar = props => {
+  
+  const [backgroundColor, setBackgroundColor] = useState({
+    backgroundColor: "transparent"
+  });
+  
+  const currentLocation = props.location.pathname;
+useEffect(() => {
+  setBackgroundColor(
+         currentLocation === "/home" || currentLocation === "/"
+           ? { backgroundColor: "transparent" }
+           : { backgroundColor: "#F4DFC6" }
+       ) 
+    
+}, [])
+
   return (
-    <nav>
-      <ul className="navList">
-        <li>
-          <a href="http://localhost:3000/">Home</a>
-        </li>
-        <li>
-          <a href="http://localhost:3000/gardens">Gardens</a>
-        </li>
-        <li>
-          <a href="http://localhost:3000/searchplants">Search</a>
-        </li>
-        <li>
-          <a
-            href="http://localhost:3000/"
-            onClick={() => {
-              firebase.auth().signOut();
-            }}
-          >
-            Logout
-          </a>
-        </li>
+    <nav className="nav">
+      <ul style={backgroundColor} className="navList">
+        <div className="primaryNavLinks">
+          <li>
+            <a className="navLinks"
+            
+             href="http://localhost:3000/home">
+              Perennial
+            </a>
+          </li>
+        </div>
+        <div className="secondaryNavLinks">
+          <li>
+            <a
+              className="navLinks"
+              
+              href="http://localhost:3000/gardens"
+            >
+              Gardens
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLinks"
+              
+              href="http://localhost:3000/searchplants"
+            >
+              Search
+            </a>
+          </li>
+          <li>
+            <a
+              className="navLinks"
+              
+              href="http://localhost:3000/"
+              onClick={() => {
+                firebase.auth().signOut();
+              }}
+            >
+              Logout
+            </a>
+          </li>
+        </div>
       </ul>
     </nav>
   );
 };
 
-export default NavBar;
+export default withRouter(NavBar);

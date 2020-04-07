@@ -1,38 +1,143 @@
-@import url('https://fonts.googleapis.com/css?family=Spectral:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spectral:400&display=swap');
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@font-face {
+    font-family: 'MyWebFont'; 
+    src: url(/myfont.woff2) format('woff2'), 
+         url(/myfont.woff2) format('woff')
+};
+
 /* GENERAL */
 body {
-    background-color:  #fffaf7;
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
     color: #184b3b; 
+    background-color:  "#F4DFC6";
+}
+label {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
+}
+#text {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
+}
+select {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif !important;
 }
 button {
     background-color: #184b3b;
-    color: #fffaf7;
-    font-family: 'Spectral', serif;
-    border-radius: 5px;
+    color: white;
+    font-family: 'MyWebFont';
+    border-radius: 5px  !important;
+    transition: .6s;
+    font-size: 13px !important;
+    padding: 10px 20px;
 }
 fieldset {
     border: none;
 }
-
-input:focus-within {
-    background-color: #f1e2e3;
-  }
-
+.largeTxt {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
 input {
     border-top: none;
     border-left: none;
     border-right: none;
-    background-color: #fffaf7;
+    background-color: white;
     text-rendering: auto;
+    font-family: 'spectral',  Arial, Helvetica, sans-serif !important;
+
 }
 
 button:hover {
     background-color: #97c582;
+    transition: .6s;
+}
+h1 {
+    font-family: 'MyWebFont', Arial, Helvetica, sans-serif;
+}
+.specialForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   height: 100vh;
+   background-color: #F4DFC6;
+  
+}
+
+.specialFieldset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #FFAA5A;
+    padding: 30px;
+    background-color: white;
+    border-radius: 13px;
+}
+
+
+.specialFieldset .submitButton {
+  width: 150px;
+ margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.formContent {
+    font-family: 'spectral',  Arial, Helvetica, sans-serif;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+
+img {
+    width: 200px; 
+    height: 150px;
+}
+
+
+.formTitle {
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    position: fixed !important;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+}
+
+.carousel.slide img {
+    width: 100vh;
+    height: 100vh;
+    object-fit: fill;
+    object-position: 50% 50%;
+    filter: brightness(0.4);
+}
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-10.5%);
+    bottom: initial;
+    color: #f1e2e3 !important;
+}
+
+/* LOADING */
+
+.loadingPage {
+    display: flex;
+    background-color: #F4DFC6;
+    color: #184b3b;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    height: 100vh;
+
 }
 /* LOGIN SECTION */
 .loginSect {
     display: flex;
+    background-color: #F4DFC6;
     justify-content: center;
     align-content: center;
     font-size: 50px;
@@ -44,12 +149,12 @@ button:hover {
 }
 .firebaseui-id-idp-button{
     background-color: #184b3b !important;
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     transition: 1s;
 }
 
 .firebaseui-idp-text {
-    color: #fffaf7 !important;
+    color: white !important;
 }
 
 .firebaseui-id-idp-button:hover {
@@ -61,14 +166,16 @@ button:hover {
     justify-content: center;
 }
 
+
 .loginName {
+    font-size: 50px;
     text-decoration: none;
     color: #184b3b;
     transition: 1s;
 }
 
 .loginName:hover {
-   color: #f08f34;
+   color: #FFAA5A;
    transition: 1s;
 }
 .action {
@@ -79,20 +186,21 @@ button:hover {
     
 }
 .mdl-button--primary.mdl-button--primary {
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     color: #184b3b;
 }
 .mdl-button--primary.mdl-button--primary:hover {
-    background-color: #fffaf7;
+    background-color: #F4DFC6;
 }
 .firebaseui-title {
+    font-size: 25px;
     display: flex;
     justify-content: center;
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     color: #184b3b;
 }
 .firebaseui-textfield.mdl-textfield {
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
 }
 
 
@@ -102,7 +210,7 @@ button:hover {
     border-right-color: #184b3b;
     border-bottom-color: #184b3b;
     border-left-color: #184b3b;
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
 }
 #loading {
     display: flex;
@@ -113,20 +221,21 @@ button:hover {
 }
 
 .mdl-button--raised.mdl-button--colored {
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     background: #184b3b;
-    color: #fffaf7;
+    color: white;
     transition: .6s;
 }
 .mdl-button--raised.mdl-button--colored:hover {
     background: #97c582;
-    color: #fffaf7;
+    color: white;
     transition: .6s;
 }
 .firebaseui-link {
     color: #184b3b;
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     text-decoration: none;
+    transition: .6s;
 }
 
 .firebaseui-link:hover {
@@ -153,11 +262,25 @@ button:hover {
 
 
 /* GARDEN */
-.content-card {
+.card-content {
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
+    display: flex;
+    flex-direction: row;
+    padding: 55px 0;
+    background-color: #F4DFC6;
+   
+}
+.gardenHeaders {
+    font-size: 50px;
 }
 
+.card-content img {
+    width: 400px;
+    height: 350px;
+    object-fit: fill;
+    object-position: 50% 50%;
+}
 .select {
     position: relative; 
     display: block; 
@@ -167,8 +290,53 @@ button:hover {
     overflow: hidden; 
     border-radius: .25em; 
     padding-bottom:10px; 
-    font-family: 'Spectral', serif;
+    font-family: 'MyWebFont';
     background-color: white;
+}
+
+.gardenDashboard {
+    background-color: #F4DFC6;
+    grid-gap: 50px;
+    height: calc(100vh - 54px);
+}
+.gardenDashboard  .defaultGardenDashboardVal{
+    display: flex;
+    justify-content: center;
+    padding-top: 285px;
+
+}
+.gardenDashboard .side2PlantCard {
+    background-color: white;
+    border-radius: 5px;
+    width: 550px;
+    height: 350px;
+    padding: 5px;
+}
+
+
+.gardenAddOpt {
+display: flex;
+justify-content: center;
+background-color: #F4DFC6;
+}
+
+
+.btnColumn {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.secondaryBtnRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.gardenBtn {
+    width: 100%;
+    padding: 15px 0;
 }
 
 /* PLANT SEARCH */
@@ -186,17 +354,81 @@ button:hover {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content/Box */
+  .contributePlantBtn {
+      display: flex;
+      justify-content: center;
+      background-color: #F4DFC6;
+  }
+  .searchResults h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .searchResults {
+      border-radius: 5px;
+      background-color: white;
+      padding: 20px;
+      width: 500px;
+      height: 600px;
+      margin: 10px;
+      overflow-y: auto;
+  }
+
+  .plantSearchResult .plantSearchBtns {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      font-size: 10px;
+      width: 50px;
+      height: 50px;
+  }
+ 
+  .plantSearchResult {
+      padding-bottom: 5px;
+  }
+ 
+.searchplantBtnSect {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  .searchPage {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #F4DFC6;
+      min-height: calc(100vh - 54px);
+  }
+  .searchFields {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .searchResults h3 {
+      border-bottom: 1.5px solid #184b3b;
+  }
+
+  /* MODAL CONTENT FOR SEARCH */
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1.5px solid #f08f34;
+    border: 3px solid #FFAA5A;
     border-radius: 10px;
-    width: 80%;
-    height: auto;
+    width: 85%;
   }
-  
+
+  .modal-information {
+    display: flex;
+    justify-content: row;
+    justify-content: space-evenly;
+  }
+  .modal-information img {
+    width: 400px;
+    height: 350px;
+    object-fit: fill;
+    object-position: 50% 50%;
+  }
   /* The Close Button */
   .close {
     color: #aaa;
@@ -211,3 +443,70 @@ button:hover {
     text-decoration: none;
     cursor: pointer;
   }
+  .side2PlantCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      font-size: 15px;
+  }
+
+/* PLANT CARD */
+.plantCard .side2PlantCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 550px;
+    height: 350px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btnWrapper {
+    display: flex;
+    justify-content: center;
+}
+.plantAddOp {
+    display: flex;
+    justify-content: center;
+    background-color: #F4DFC6;
+}
+.emptyPlantCard {
+    display: flex;
+    justify-content: center;
+    background-color: #F4DFC6;
+    height: 30vh;
+}
+.plantCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 65px 0;
+    background-color: #F4DFC6
+}
+.plantCard img {
+    width: 550px;
+    height: 350px;
+    object-fit: fill;
+    object-position: 50% 50%;
+}
+.gardenDetailSect {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 130px 0;
+    background-color: #F4DFC6;
+}
+
+.gardenDetailSect img {
+    width: 550px;
+    height: 350px;
+    object-fit: fill;
+    object-position: 50% 50%;
+}
+.modal-content .specialForm {
+    background-color: #fefefe;
+    height: fit-content;
+}
+ 

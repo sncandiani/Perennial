@@ -1,130 +1,244 @@
 {
   "users": [
     {
-      "uid": "ZNy3AhwGEaermYxgj3r7XywQB2A3",
-      "name": "Sofia Candiani",
+      "uid": "nwM3y2asUgSGGTy3subJCbWTSMc2",
+      "name": "Sofia C",
       "id": 1
     },
     {
-      "uid": "DNKk2Recg6S2rU4HTkRDnTaVxkt1",
-      "name": "trinity",
+      "uid": "MAzU7ERKZwN6gF4X08qWXY5oSDc2",
+      "name": "Trinity T",
       "id": 2
     }
   ],
   "plants": [
     {
-      "id": 2,
-      "userId": 2,
-      "name": "Noakleaf",
-      "height": "6-8 ft.",
-      "sunExposure": "Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312"
+      "id": 1,
+      "userId": 1,
+      "name": "Orange Daylily",
+      "height": "24-36 in",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fil6.picdn.net%2Fshutterstock%2Fvideos%2F3603602%2Fthumb%2F1.jpg&f=1&nofb=1"
     },
     {
       "userId": 1,
-      "name": "Yellow-Flowered Lambs' Ear",
-      "height": "6-12 in.",
-      "sunExposure": "Full Sun",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2019/04/28/Kell/8e981a.jpg&widht=700&height=312",
+      "name": "Hot Lemon Pepper",
+      "height": "24-36 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg0.etsystatic.com%2F050%2F0%2F7824311%2Fil_570xN.670554410_k2zz.jpg&f=1&nofb=1",
       "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "Ornamental Pepper",
+      "height": "18-24 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pepperscale.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fcan-you-eat-ornamental-peppers-e1456721517690.jpg&f=1&nofb=1",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "name": "Cowhorn Pepper",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.healthbenefitstimes.com%2F9%2Fuploads%2F2013%2F06%2FCajun-Belle-Pepper.jpg&f=1&nofb=1"
+    },
+    {
+      "userId": 1,
+      "name": "Banana Pepper",
+      "height": "18-36in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fbonnieplants.com%2Fwp-content%2Fuploads%2Fhot-banana-pepper.jpg%3Ffit%3D1024%252C1118%26ssl%3D1&f=1&nofb=1",
+      "id": 6
+    },
+    {
+      "userId": 2,
+      "name": "Cayenne Pepper",
+      "height": "12-24 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-WazD1YSNz14%2FUYv3MwzDqII%2FAAAAAAAAADs%2FlwGEO2i8V6Q%2Fs1600%2Funtitled.png&f=1&nofb=1",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "name": "Bell Pepper",
+      "height": "24-36 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.garden.eco%2Fwp-content%2Fuploads%2F2018%2F03%2Fhow-many-bell-peppers-per-plant.jpg&f=1&nofb=1",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "name": "Sweet Pepper",
+      "height": "24-36 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fedge.bonnieplants.com%2Fwww%2Fuploads%2F20180920004013%2Fpimiento-pepper.jpg&f=1&nofb=1",
+      "id": 9
+    },
+    {
+      "userId": 2,
+      "name": "Mophead Endless Summer Hydrangea",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://cdn11.bigcommerce.com/s-jmzfi5zcr2/product_images/uploaded_images/mophead-hydrangea-cropped-compressor.jpg",
+      "id": 10
+    },
+    {
+      "userId": 2,
+      "name": "Lacecap Hydrangea",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F1.bp.blogspot.com%2F_BDpMTts_yhg%2FTDzvY5-XLyI%2FAAAAAAAAHbs%2FAGeUROAlpOo%2Fs1600%2FIMG_1071.JPG&f=1&nofb=1",
+      "id": 11
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "Rosemary",
+      "height": "4-6 ft.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 1,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-7u3yWvYjpcw%2FUE7Hn7Tng-I%2FAAAAAAAAB10%2FtWMBIl_EpR0%2Fs1600%2Frosemary-closeup.jpg&f=1&nofb=1"
+    },
+    {
+      "userId": 2,
+      "name": "Spanish Thyme",
+      "height": "12-18 in.",
+      "sunExposureTypeId": 2,
+      "waterRequirementTypeId": 1,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1b%2FLeaf_-pani_koorkka.JPG&f=1&nofb=1",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "name": "Pineapple Sage",
+      "height": "36-48 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 2,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.motherearthliving.com%2F~%2Fmedia%2FImages%2FMEL%2FEditorial%2FArticles%2FMagazine%2520Articles%2F1993%2F06-01%2FHerb%2520to%2520Know%2520Pineapple%2520Sage%2Fpineapple-sage-salvia-elega.jpg&f=1&nofb=1",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "name": "Lemon Balm",
+      "height": "12-18 in.",
+      "sunExposureTypeId": 1,
+      "waterRequirementTypeId": 3,
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fi.ebayimg.com%2Fimages%2Fi%2F291411609126-0-1%2Fs-l1000.jpg&f=1&nofb=1",
+      "id": 15
     }
   ],
   "gardens": [
     {
+      "userId": 1,
+      "name": "Herbs",
+      "dateCreated": "2020-01-01",
+      "gardenLocation": "Kitchen ",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpre-tend.com%2Fwp-content%2Fuploads%2F2017%2F10%2FGreen-kitchen-growing-herbs-indoors-herb-garden-window-herb-garden-kitchen-herb-garden-growing-herbs-herb-planter-indoor-1024x1024.jpg&f=1&nofb=1",
+      "id": 1
+    },
+    {
+      "id": 2,
       "userId": 2,
-      "name": "Trinitys first garden out of spite",
-      "dateCreated": "2020-03-03",
+      "name": "Herbs",
+      "dateCreated": "2018-05-09",
+      "gardenLocation": "Patio",
+      "imageUrl": "https://homebnc.com/homeimg/2016/06/06-balcony-gardens-culinary-creations-homebnc.jpg"
+    },
+    {
+      "userId": 2,
+      "name": "Flower garden",
+      "dateCreated": "2020-06-07",
       "gardenLocation": "Backyard",
-      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-11W-OXoUE9w%2FT_bXYrKxLuI%2FAAAAAAAABBk%2FDuFgHd3NALI%2Fs1600%2Fws_strafford_hydrangea_1600x1200.jpg&f=1&nofb=1",
-      "id": 2
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fflowergardengirl.co.uk%2Fwp-content%2Fuploads%2F2013%2F12%2Fmodern-minimalist-garden-design-low-maintenance-high-impact-garden-design-raised-white-wall-beds-grey-decking-east-grass-lawn-turf-sunken-garden-with-fire-and-chimney-flat-trees-balham-wandsworth-london-2.jpg&f=1&nofb=1",
+      "id": 3
     }
   ],
   "gardensAndPlants": [
     {
-      "gardenId": 2,
-      "personalPlantId": 3,
+      "gardenId": 1,
+      "personalPlantId": 1,
+      "id": 1
+    },
+    {
+      "gardenId": 1,
+      "personalPlantId": 2,
       "id": 2
     }
   ],
   "personalPlants": [
     {
       "userId": 1,
-      "name": "Daylily 'Kwanso'",
-      "height": "4-6 ft",
-      "sunExposure": "Full Sun, Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
+      "name": "Spanish Thyme",
+      "height": "12-18 in.",
+      "sunExposure": "Sun to Partial Shade",
+      "waterRequirements": "Drought Tolerant",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1b%2FLeaf_-pani_koorkka.JPG&f=1&nofb=1",
       "hasBeenWatered": false,
       "nickname": "",
       "id": 1
     },
     {
-      "userId": 2,
-      "name": "Oakleaf Hydrangea, Oak-leaf Hydrangea",
-      "height": "6-8 ft.",
-      "sunExposure": "Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312",
+      "userId": 1,
+      "name": "Rosemary",
+      "height": "4-6 ft.",
+      "sunExposure": "Full Sun",
+      "waterRequirements": "Drought Tolerant",
+      "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-7u3yWvYjpcw%2FUE7Hn7Tng-I%2FAAAAAAAAB10%2FtWMBIl_EpR0%2Fs1600%2Frosemary-closeup.jpg&f=1&nofb=1",
       "hasBeenWatered": false,
       "nickname": "",
       "id": 2
+    }
+  ],
+  "sunExposureTypes": [
+    {
+      "id": 1,
+      "sunExposure": "Full Sun"
     },
     {
-      "userId": 2,
-      "name": "Daylily 'Kwanso'",
-      "height": "4-6 ft",
-      "sunExposure": "Full Sun, Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 3
+      "id": 2,
+      "sunExposure": "Sun to Partial Shade"
     },
     {
-      "userId": 1,
-      "name": "Daylily 'Kwanso'",
-      "height": "4-6 ft",
-      "sunExposure": "Full Sun, Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 4
+      "id": 3,
+      "sunExposure": "Light Shade"
     },
     {
-      "userId": 1,
-      "name": "Oakleaf Hydrangea, Oak-leaf Hydrangea",
-      "height": "6-8 ft.",
-      "sunExposure": "Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2002/03/07/plantdude/cf5a58.jpg&widht=700&height=312",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 5
+      "id": 4,
+      "sunExposure": "Partial to Full shade"
     },
     {
-      "userId": 1,
-      "name": "Daylily 'Kwanso'",
-      "height": "4-6 ft",
-      "sunExposure": "Full Sun, Sun to Partial Shade",
-      "waterRequirements": "Average Water Needs; Water regularly; do not overwater",
-      "imageUrl": "https://davesgarden.com/guides/pf/thumbnail.php?image=2009/07/03/kgd7966/c5a6f9.jpg&widht=700&height=312",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 6
+      "id": 5,
+      "sunExposure": " Full shade"
+    }
+  ],
+  "waterRequirementTypes": [
+    {
+      "id": 1,
+      "waterRequirement": "Drought Tolerant"
     },
     {
-      "userId": 1,
-      "name": "some plant",
-      "height": "dlkjflkj",
-      "sunExposure": "sdlkfjfklj",
-      "waterRequirements": "sdflkjflkj",
-      "imageUrl": "sdlkfjflkj",
-      "hasBeenWatered": false,
-      "nickname": "",
-      "id": 7
+      "id": 2,
+      "waterRequirement": "Average Water Needs; Water regularly; do not overwater"
+    },
+    {
+      "id": 3,
+      "waterRequirement": "Requires consistently moist soil; do not let dry out between waterings"
+    },
+    {
+      "id": 4,
+      "waterRequirement": "Very high moisture needs; suitable for bogs and water gardens"
     }
   ]
 }

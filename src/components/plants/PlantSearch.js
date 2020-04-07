@@ -1,32 +1,39 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import API from "../../modules/ApiManager";
 
 const PlantSearch = props => {
-  const openModal = () => {
-    document.getElementById("myModal").style.display = "block";
-  };
+  const openModal = () => document.getElementById(`modal--${props.index}`).style.display = "block";
 
-  const closeSpanModal = () => {
-    document.getElementById("myModal").style.display = "none";
-  };
+
+  const closeSpanModal = () => document.getElementById(`modal--${props.index}`).style.display = "none";
+
+ 
   return (
-    <>
-      <h1>{props.name}</h1>
+    <div className="plantSearchResult">
+      <h4>{props.name}</h4>
+      <div className="plantSearchBtns">
       <button id="myBtn" onClick={openModal}>
         More Information
       </button>
-      <div id="myModal" className="modal">
+      <div id={`modal--${props.index}`} className="modal">
         <div className="modal-content">
           <span onClick={closeSpanModal} className="close">
             &times;
           </span>
-          <img width="100px" height="100px"src={props.plantObj.imageUrl}></img>
-          <p>{props.plantObj.name}</p>
-          <p>{props.plantObj.height}</p>
-          <p>{props.plantObj.sunExposure}</p>
-          <p>{props.plantObj.waterRequirements}</p>
+          <div className="modal-information">
+          <div className="side1PlantCard">
+         <img src={props.plantObj.imageUrl}></img>
+         </div>
+         <div className="side2PlantCard">
+          <p style={{fontSize: "large"}}>Name: {props.plantObj.name}</p>
+          <p style={{fontSize: "medium"}}>Height: {props.plantObj.height}</p>
+          <p style={{fontSize: "medium"}}>Sun Exposure: {props.plantObj.sunExposureType.sunExposure}</p>
+          <p style={{fontSize: "medium"}}>Water Requirements: {props.plantObj.waterRequirementType.waterRequirement}</p>
+          </div>
+          </div>
         </div>
       </div>
+
       <button
         className="addPlantButton"
         type="button"
@@ -46,7 +53,7 @@ const PlantSearch = props => {
             type="button"
             onClick={() => props.history.push(`plants/${props.plantId}/edit`)}
           >
-            Edit your listing
+            Edit listing
           </button>
           <button
             type="button"
@@ -59,11 +66,12 @@ const PlantSearch = props => {
               }
             }}
           >
-            Delete your listing
+            Delete listing
           </button>
         </>
       ) : null}
-    </>
+      </div>
+    </div>
   );
 };
 

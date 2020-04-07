@@ -24,7 +24,7 @@ const GardenEditForm = (props) => {
         }
         API.updateGarden(editedGarden)
         .then(() => {
-            props.history.push("/")
+            props.history.push("/gardens")
         })
     }
 
@@ -37,10 +37,10 @@ const GardenEditForm = (props) => {
     }, [props.match.params.gardenId])
 
     return (
-        <form>
+        <form className="specialForm">
             
-        <fieldset>
-
+        <fieldset className="specialFieldset">
+        <h1 className="formTitle">Edit Garden</h1>
         <div className="formContent">
         <label htmlFor="name">Garden Name:</label> <span></span>
         <input

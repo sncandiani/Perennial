@@ -25,7 +25,7 @@ const GardenList = props => {
   return (
     <div className="container-card">
       {gardens.length === 0 ? (
-        <h1>You have no gardens</h1>
+        <div className="defaultGardenDashboardVal"><h1>You have no gardens</h1></div>
       ) : (
         gardens.map(garden => (
           <GardenCard

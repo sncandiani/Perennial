@@ -2,10 +2,34 @@ import React, {useState, useEffect} from "react"
 import API from "../../modules/ApiManager"
 
 const PlantEditForm = (props) => {
-    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposure: "", waterRequirements: "", imageUrl: ""})
+    const [plants, setPlants] = useState({userId: parseInt(sessionStorage.getItem("userId")), name: "", height: "", sunExposureTypeId: "", waterRequirementTypeId: "", imageUrl: ""})
     const [isLoading, setIsLoading] = useState(false)
-    
-    //value of plants will be taken in with every change
+    const [sunExposures, setSunExposures] = useState([]);
+  const [waterRequirements, setWaterRequirements] = useState([]);
+  
+  const getSunExposures = () => {
+    API.getSunExposureType().then(sunExposureArr => {
+      setSunExposures(sunExposureArr);
+    });
+  };
+
+  const getWaterRequirements = () => {
+    API.getWaterRequirementType().then(waterRequirementArr => {
+      setWaterRequirements(waterRequirementArr);
+    });
+  };
+  const sunExpFieldChange = e => {
+    const stateToChange = { ...plants };
+    stateToChange.sunExposureTypeId = parseInt(e.target.value)
+    setPlants(stateToChange)
+  }
+
+  const waterReqFieldChange = e => {
+    const stateToChange = { ...plants };
+    stateToChange.waterRequirementTypeId = parseInt(e.target.value)
+    setPlants(stateToChange)
+  }
+
     const handleFieldChange = (e) => {
         const stateToChange = {...plants} 
         stateToChange[e.target.id] = e.target.value
@@ -19,8 +43,8 @@ const PlantEditForm = (props) => {
             userId: plants.userId,
             name: plants.name, 
             height: plants.height,
-            sunExposure: plants.sunExposure, 
-            waterRequirements: plants.waterRequirements,
+            sunExposureTypeId: plants.sunExposureTypeId, 
+            waterRequirementTypeId: plants.waterRequirementTypeId,
             imageUrl: plants.imageUrl
         }
         API.updatePlant(editedPlant)
@@ -30,18 +54,20 @@ const PlantEditForm = (props) => {
     }
 
     useEffect(() => {
+      getSunExposures();
+    getWaterRequirements();
         API.editPlant(props.match.params.plantId).then((plant) => {
             setPlants(plant)
             setIsLoading(false)
         })
     }, [props.match.params.plantId])
 
-
-
-    return (       
-            <form>
-            <fieldset>
     
+    
+    return (       
+            <form className="specialForm">
+            <fieldset className="specialFieldset">
+            <h1 className="formTitle">Edit Plant</h1>
             <div className="formContent">
             <label htmlFor="name">Plant Name:</label> <span></span>
             <input
@@ -66,24 +92,26 @@ const PlantEditForm = (props) => {
     
             <div className="formContent">
             <label htmlFor="sunExposure">Sun Exposure:</label> <span></span>
-            <input
-              type="text"
-              required
-              onChange={handleFieldChange}
-              id="sunExposure"
-              value={plants.sunExposure}
-            />
+            <select className="select" id="sunExposureList" value={plants.sunExposureTypeId} onChange={sunExpFieldChange}>
+              {sunExposures.map(sunExposureInfo => {
+      
+                 return <option key={sunExposureInfo.id} value={sunExposureInfo.id}>
+                 {sunExposureInfo.sunExposure}
+               </option>
+              })}
+               </select>
             </div>
     
             <div className="formContent">
             <label htmlFor="waterRequirements">Water Requirements:</label> <span></span>
-            <input
-              type="text"
-              required
-              onChange={handleFieldChange}
-              id="waterRequirements"
-              value={plants.waterRequirements}
-            />
+            <select className="select" id="waterRequirementList" value={plants.WaterRequirementTypeId}onChange={waterReqFieldChange}>
+              {waterRequirements.map(waterRequirementInfo => {
+                 return <option key={waterRequirementInfo.id}  value={waterRequirementInfo.id}>
+                 {waterRequirementInfo.waterRequirement}
+               </option>
+              
+              })}
+               </select>
             </div>
     
             <div className="formContent">
